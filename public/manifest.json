@@ -1,0 +1,28 @@
+{
+  "short_name": "komektes",
+  "name": "komektes — neighbourly help marketplace",
+  "description": "Find someone who can help — or offer your own skills. A peer-to-peer marketplace where neighbours offer and request help.",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#3aa6c2",
+  "background_color": "#fbfaf6"
+}

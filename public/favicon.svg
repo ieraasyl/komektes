@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <title>komektes</title>
+  <rect width="64" height="64" rx="14" ry="14" fill="#3aa6c2"/>
+  <path
+    d="M22 12 h6 v24.4 l11.2 -11.4 h7.6 l-12 12.2 12.6 14.8 h-8 l-11.4 -13.6 v13.6 h-6 z"
+    fill="#ffffff"
+  />
+</svg>

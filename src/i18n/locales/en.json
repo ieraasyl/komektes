@@ -1,0 +1,266 @@
+{
+  "common": {
+    "switchLanguage": "Switch language",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "saving": "Saving…",
+    "cancel": "Cancel",
+    "confirmAction": "Confirm?",
+    "back": "Back"
+  },
+  "brand": {
+    "name": "komektes",
+    "tagline": "Help your neighbours. Get help back."
+  },
+  "nav": {
+    "browse": "Browse",
+    "dashboard": "Dashboard",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "newListing": "New listing"
+  },
+  "landing": {
+    "heroTitle": "A neighbourly help marketplace.",
+    "heroSubtitle": "Find someone who can help — or offer your own skills. Free, hourly, fixed price, or just a favour.",
+    "ctaBrowse": "Browse listings",
+    "ctaPost": "Post a listing",
+    "liveLabel": "Live near you",
+    "viewAll": "Browse all listings →",
+    "emptyTitle": "Nothing here yet",
+    "emptyDesc": "Be the first to post an offer or a request.",
+    "offersTitle": "I can help",
+    "offersDesc": "Tutoring, repairs, errands, design, code — share what you can do.",
+    "requestsTitle": "I need help",
+    "requestsDesc": "Ask your community for help. Pay what's fair, or pay nothing.",
+    "howTitle": "How it works",
+    "howStep1Title": "Sign in",
+    "howStep1Desc": "Email code or Google. Set a Telegram handle so people can reach you.",
+    "howStep2Title": "Post or browse",
+    "howStep2Desc": "Create offers and requests with category, tags, and pricing.",
+    "howStep3Title": "Connect & review",
+    "howStep3Desc": "Chat on Telegram. Mark the deal complete and leave a rating."
+  },
+  "footer": {
+    "copyright": "© {{year}} komektes",
+    "terms": "Terms",
+    "privacy": "Privacy"
+  },
+  "notFound": {
+    "error": "Page not found",
+    "message": "The page you're looking for doesn't exist or has been moved.",
+    "goHome": "Go home"
+  },
+  "errorPage": {
+    "title": "Something went wrong",
+    "message": "Something went wrong while loading this page. You can try again or return home.",
+    "retry": "Try again",
+    "goHome": "Go home"
+  },
+  "login": {
+    "backToHome": "Back to home",
+    "signInWithGoogle": "Continue with Google",
+    "redirecting": "Redirecting…",
+    "or": "or",
+    "errorPrefix": "",
+    "goToDashboard": "Go to dashboard",
+    "signIn": "Sign in",
+    "signInDesc": "Enter your email and we'll send you a sign-in code.",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "continue": "Continue",
+    "sendingCode": "Sending code…",
+    "verificationCode": "Verification code",
+    "verificationDesc": "We sent a 6-digit code to",
+    "code": "Code",
+    "verifySignIn": "Verify & sign in",
+    "verifying": "Verifying…",
+    "differentEmail": "Use a different email",
+    "resendCode": "Resend code",
+    "resendIn": "Resend in {{seconds}}s",
+    "sendCodeFailed": "Failed to send verification code",
+    "invalidCode": "Invalid verification code",
+    "resendFailed": "Failed to resend code",
+    "unknownError": "Unknown error",
+    "errorLabel": "Error"
+  },
+  "onboarding": {
+    "errorPrefix": "",
+    "title": "Set up your profile",
+    "desc": "A short profile so other people know who they're talking to.",
+    "completeProfile": "Set up your profile",
+    "completeProfileDesc": "A short profile so other people know who they're talking to.",
+    "bioHelp": "Optional. Shown on your public profile.",
+    "somethingWentWrong": "Something went wrong",
+    "displayName": "Display name",
+    "displayNamePlaceholder": "Ada Lovelace",
+    "telegram": "Telegram handle",
+    "telegramPlaceholder": "@your_handle",
+    "telegramHelp": "Other signed-in users will see this on your listings.",
+    "city": "City",
+    "cityPlaceholder": "Astana",
+    "cityOptional": "(optional)",
+    "bio": "Short bio",
+    "bioPlaceholder": "What you can help with, languages you speak, etc.",
+    "bioOptional": "(optional)",
+    "submit": "Save profile",
+    "saving": "Saving…",
+    "signOutDifferent": "Sign out / use a different account"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcomeBack": "Welcome back,",
+    "yourProfile": "Your profile",
+    "editProfile": "Edit profile",
+    "myOffers": "My offers",
+    "myRequests": "My requests",
+    "yourOffers": "Your offers",
+    "yourRequests": "Your requests",
+    "noOffers": "No offers yet — post something you can help with.",
+    "noRequests": "No requests yet — ask the community for help.",
+    "newListing": "New listing",
+    "newOffer": "New offer",
+    "newRequest": "New request",
+    "close": "Close",
+    "reopen": "Reopen",
+    "rating": "Rating",
+    "ratingSummary": "{{avg}} ({{count}} reviews)",
+    "noReviews": "No reviews yet",
+    "noReviewsYet": "no reviews yet"
+  },
+  "browse": {
+    "title": "Browse listings",
+    "subtitle": "Help offered and requested by people near you.",
+    "search": "Search",
+    "searchPlaceholder": "keyword…",
+    "category": "Category",
+    "categoryPlaceholder": "e.g. tutoring",
+    "kind": "Type",
+    "priceMode": "Price",
+    "apply": "Apply",
+    "empty": "No listings match your filters.",
+    "kinds": {
+      "all": "All"
+    },
+    "priceModes": {
+      "any": "Any"
+    }
+  },
+  "listingForm": {
+    "createTitle": "Post a new listing",
+    "createDesc": "Tell the community what you can offer or what you need.",
+    "newTitle": "Post a new listing",
+    "newDesc": "Tell the community what you can offer or what you need.",
+    "publish": "Publish",
+    "publishing": "Publishing…",
+    "editTitle": "Edit listing",
+    "editDesc": "Update the details of your listing.",
+    "kind": "Type",
+    "kinds": {
+      "offer": "Offer",
+      "request": "Request"
+    },
+    "kindHelp": {
+      "offer": "Something you can do for others.",
+      "request": "Something you need help with."
+    },
+    "title": "Title",
+    "titlePlaceholder": "Math tutoring for high-school students",
+    "description": "Description",
+    "descriptionPlaceholder": "Describe what's included, your experience, scheduling, etc.",
+    "category": "Category",
+    "categoryPlaceholder": "tutoring, repairs, design…",
+    "categoryHelp": "Free-text. Keep it short and consistent.",
+    "city": "City",
+    "cityPlaceholder": "Astana",
+    "tags": "Tags",
+    "tagsPlaceholder": "math, algebra, evenings",
+    "tagsHelp": "Comma-separated. Helps people find your listing.",
+    "priceMode": "Pricing",
+    "priceModes": {
+      "fixed": "Fixed",
+      "hourly": "Hourly",
+      "negotiable": "Negotiable",
+      "free": "Free"
+    },
+    "priceAmount": "Amount",
+    "priceMin": "Min",
+    "priceMax": "Max",
+    "priceMaxHelp": "Optional upper bound.",
+    "currency": "Currency",
+    "errorPrefix": "",
+    "unknownError": "Something went wrong"
+  },
+  "listingDetail": {
+    "back": "Back to browse",
+    "byAuthor": "by {{name}}",
+    "author": "Author",
+    "unknownAuthor": "Unknown author",
+    "contact": "Contact",
+    "contactNote": "Reach out on Telegram to discuss details.",
+    "signInToContact": "Sign in to see contact info and connect.",
+    "signIn": "Sign in",
+    "thisIsYours": "This is your listing.",
+    "markContacted": "I've contacted them",
+    "connecting": "Connecting…"
+  },
+  "engagement": {
+    "activeTitle": "Active engagement",
+    "activeDesc": "Mark this complete after the help was provided. You'll then be able to leave a rating.",
+    "markComplete": "Mark complete",
+    "leaveReview": "Leave a review",
+    "rating": "Rating",
+    "reviewText": "Comment (optional)",
+    "submitReview": "Submit review",
+    "alreadyReviewed": "You've already reviewed this engagement. Thanks!"
+  },
+  "profile": {
+    "rating": "Rating",
+    "noReviews": "No reviews yet",
+    "noReviewsYet": "No reviews yet.",
+    "contact": "Contact",
+    "signInToSeeContact": "Sign in to see contact info.",
+    "signIn": "Sign in",
+    "activeListings": "Active listings",
+    "noListings": "No active listings.",
+    "reviews": "Reviews"
+  },
+  "validation": {
+    "emailRequired": "Email is required",
+    "invalidEmail": "Enter a valid email address",
+    "codeMustBe6Digits": "Code must be 6 digits",
+    "displayNameRequired": "Display name is required",
+    "displayNameMax": "Display name must be 80 characters or fewer",
+    "telegramRequired": "Telegram handle is required",
+    "telegramInvalid": "Enter a valid Telegram username (3-32 chars: letters, digits, _)",
+    "cityMax": "City must be 80 characters or fewer",
+    "bioMax": "Bio must be 500 characters or fewer",
+    "titleRequired": "Title is required",
+    "titleMax": "Title must be 120 characters or fewer",
+    "descriptionRequired": "Description is required",
+    "descriptionMax": "Description must be 4000 characters or fewer",
+    "categoryRequired": "Category is required",
+    "categoryMax": "Category must be 60 characters or fewer",
+    "tagsMax": "Tags string is too long",
+    "priceModeInvalid": "Pick a valid pricing option",
+    "priceMinInvalid": "Minimum price must be a positive number",
+    "priceMaxInvalid": "Maximum price must be a positive number",
+    "priceRangeInvalid": "Maximum price must be greater than or equal to minimum",
+    "priceRequired": "Price is required for this pricing mode",
+    "kindInvalid": "Pick a valid listing type",
+    "ratingInvalid": "Rating must be between 1 and 5",
+    "reviewTextMax": "Review must be 1000 characters or fewer"
+  },
+  "errors": {
+    "auth": {
+      "required": "You need to sign in to do that."
+    },
+    "listing": {
+      "notFound": "Listing not found.",
+      "forbidden": "You don't own this listing."
+    },
+    "engagement": {
+      "cannotEngageSelf": "You can't engage with your own listing."
+    }
+  }
+}

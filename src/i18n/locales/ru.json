@@ -1,0 +1,266 @@
+{
+  "common": {
+    "switchLanguage": "Сменить язык",
+    "edit": "Редактировать",
+    "delete": "Удалить",
+    "save": "Сохранить",
+    "saving": "Сохранение…",
+    "cancel": "Отмена",
+    "confirmAction": "Подтвердить?",
+    "back": "Назад"
+  },
+  "brand": {
+    "name": "komektes",
+    "tagline": "Помогай соседям. Получай помощь в ответ."
+  },
+  "nav": {
+    "browse": "Каталог",
+    "dashboard": "Кабинет",
+    "signIn": "Войти",
+    "signOut": "Выйти",
+    "newListing": "Новое объявление"
+  },
+  "landing": {
+    "heroTitle": "Соседский маркетплейс взаимопомощи.",
+    "heroSubtitle": "Найдите того, кто поможет — или предложите свои навыки. Бесплатно, по часам, фикс или по договорённости.",
+    "ctaBrowse": "Смотреть объявления",
+    "ctaPost": "Создать объявление",
+    "liveLabel": "Сейчас рядом с вами",
+    "viewAll": "Все объявления →",
+    "emptyTitle": "Здесь пока пусто",
+    "emptyDesc": "Опубликуйте первое предложение или запрос.",
+    "offersTitle": "Я могу помочь",
+    "offersDesc": "Репетиторство, починка, дизайн, код — поделитесь тем, что вы умеете.",
+    "requestsTitle": "Мне нужна помощь",
+    "requestsDesc": "Попросите помощь у сообщества. Платите по справедливости — или ничего.",
+    "howTitle": "Как это работает",
+    "howStep1Title": "Войти",
+    "howStep1Desc": "Код по почте или Google. Укажите Telegram, чтобы с вами могли связаться.",
+    "howStep2Title": "Опубликовать или искать",
+    "howStep2Desc": "Создавайте предложения и запросы с категорией, тегами и ценой.",
+    "howStep3Title": "Связаться и оценить",
+    "howStep3Desc": "Общайтесь в Telegram. Отметьте сделку завершённой и оставьте отзыв."
+  },
+  "footer": {
+    "copyright": "© {{year}} komektes",
+    "terms": "Условия",
+    "privacy": "Конфиденциальность"
+  },
+  "notFound": {
+    "error": "Страница не найдена",
+    "message": "Страница не существует или была перемещена.",
+    "goHome": "На главную"
+  },
+  "errorPage": {
+    "title": "Что-то пошло не так",
+    "message": "Что-то пошло не так при загрузке страницы. Попробуйте снова или вернитесь на главную.",
+    "retry": "Повторить",
+    "goHome": "На главную"
+  },
+  "login": {
+    "backToHome": "На главную",
+    "signInWithGoogle": "Продолжить с Google",
+    "redirecting": "Перенаправление…",
+    "or": "или",
+    "errorPrefix": "",
+    "goToDashboard": "В кабинет",
+    "signIn": "Вход",
+    "signInDesc": "Введите e-mail — мы пришлём вам код для входа.",
+    "email": "E-mail",
+    "emailPlaceholder": "you@example.com",
+    "continue": "Продолжить",
+    "sendingCode": "Отправка кода…",
+    "verificationCode": "Код подтверждения",
+    "verificationDesc": "Мы отправили 6-значный код на",
+    "code": "Код",
+    "verifySignIn": "Подтвердить и войти",
+    "verifying": "Проверка…",
+    "differentEmail": "Другой e-mail",
+    "resendCode": "Отправить ещё раз",
+    "resendIn": "Повтор через {{seconds}} с",
+    "sendCodeFailed": "Не удалось отправить код",
+    "invalidCode": "Неверный код подтверждения",
+    "resendFailed": "Не удалось отправить код повторно",
+    "unknownError": "Неизвестная ошибка",
+    "errorLabel": "Ошибка"
+  },
+  "onboarding": {
+    "errorPrefix": "",
+    "title": "Заполните профиль",
+    "desc": "Короткий профиль, чтобы другие знали, с кем общаются.",
+    "completeProfile": "Заполните профиль",
+    "completeProfileDesc": "Короткий профиль, чтобы другие знали, с кем общаются.",
+    "bioHelp": "Необязательно. Видно в вашем публичном профиле.",
+    "somethingWentWrong": "Что-то пошло не так",
+    "displayName": "Имя для отображения",
+    "displayNamePlaceholder": "Ада Лавлейс",
+    "telegram": "Telegram",
+    "telegramPlaceholder": "@your_handle",
+    "telegramHelp": "Авторизованные пользователи увидят это в ваших объявлениях.",
+    "city": "Город",
+    "cityPlaceholder": "Астана",
+    "cityOptional": "(необязательно)",
+    "bio": "О себе",
+    "bioPlaceholder": "Чем вы можете помочь, какие языки знаете и т.д.",
+    "bioOptional": "(необязательно)",
+    "submit": "Сохранить профиль",
+    "saving": "Сохранение…",
+    "signOutDifferent": "Выйти / войти под другим аккаунтом"
+  },
+  "dashboard": {
+    "title": "Кабинет",
+    "welcomeBack": "С возвращением,",
+    "yourProfile": "Ваш профиль",
+    "editProfile": "Редактировать",
+    "myOffers": "Мои предложения",
+    "myRequests": "Мои запросы",
+    "yourOffers": "Ваши предложения",
+    "yourRequests": "Ваши запросы",
+    "noOffers": "Нет предложений — расскажите, чем можете помочь.",
+    "noRequests": "Нет запросов — попросите помощи у сообщества.",
+    "newListing": "Новое объявление",
+    "newOffer": "Новое предложение",
+    "newRequest": "Новый запрос",
+    "close": "Закрыть",
+    "reopen": "Открыть снова",
+    "rating": "Рейтинг",
+    "ratingSummary": "{{avg}} ({{count}} отзывов)",
+    "noReviews": "Отзывов ещё нет",
+    "noReviewsYet": "отзывов ещё нет"
+  },
+  "browse": {
+    "title": "Каталог объявлений",
+    "subtitle": "Помощь, которую предлагают и ищут люди рядом.",
+    "search": "Поиск",
+    "searchPlaceholder": "ключевое слово…",
+    "category": "Категория",
+    "categoryPlaceholder": "напр. репетиторство",
+    "kind": "Тип",
+    "priceMode": "Цена",
+    "apply": "Применить",
+    "empty": "Объявлений не найдено.",
+    "kinds": {
+      "all": "Все"
+    },
+    "priceModes": {
+      "any": "Любая"
+    }
+  },
+  "listingForm": {
+    "createTitle": "Новое объявление",
+    "createDesc": "Расскажите, чем вы можете помочь или какая помощь вам нужна.",
+    "newTitle": "Новое объявление",
+    "newDesc": "Расскажите, чем вы можете помочь или какая помощь вам нужна.",
+    "publish": "Опубликовать",
+    "publishing": "Публикация…",
+    "editTitle": "Редактировать объявление",
+    "editDesc": "Обновите детали объявления.",
+    "kind": "Тип",
+    "kinds": {
+      "offer": "Предложение",
+      "request": "Запрос"
+    },
+    "kindHelp": {
+      "offer": "То, что вы можете сделать для других.",
+      "request": "То, в чём вам нужна помощь."
+    },
+    "title": "Заголовок",
+    "titlePlaceholder": "Репетитор по математике для школьников",
+    "description": "Описание",
+    "descriptionPlaceholder": "Что входит, ваш опыт, расписание и т.д.",
+    "category": "Категория",
+    "categoryPlaceholder": "репетиторство, ремонт, дизайн…",
+    "categoryHelp": "Свободный текст. Кратко и единообразно.",
+    "city": "Город",
+    "cityPlaceholder": "Астана",
+    "tags": "Теги",
+    "tagsPlaceholder": "математика, алгебра, вечером",
+    "tagsHelp": "Через запятую. Помогает находить ваше объявление.",
+    "priceMode": "Цена",
+    "priceModes": {
+      "fixed": "Фикс",
+      "hourly": "Почасовая",
+      "negotiable": "По договорённости",
+      "free": "Бесплатно"
+    },
+    "priceAmount": "Сумма",
+    "priceMin": "От",
+    "priceMax": "До",
+    "priceMaxHelp": "Необязательная верхняя граница.",
+    "currency": "Валюта",
+    "errorPrefix": "",
+    "unknownError": "Что-то пошло не так"
+  },
+  "listingDetail": {
+    "back": "Назад в каталог",
+    "byAuthor": "автор: {{name}}",
+    "author": "Автор",
+    "unknownAuthor": "Автор неизвестен",
+    "contact": "Контакт",
+    "contactNote": "Свяжитесь в Telegram, чтобы обсудить детали.",
+    "signInToContact": "Войдите, чтобы увидеть контакты и связаться.",
+    "signIn": "Войти",
+    "thisIsYours": "Это ваше объявление.",
+    "markContacted": "Я уже связался",
+    "connecting": "Подключение…"
+  },
+  "engagement": {
+    "activeTitle": "Активная сделка",
+    "activeDesc": "Отметьте завершение, когда помощь будет оказана. Тогда вы сможете оставить отзыв.",
+    "markComplete": "Завершить",
+    "leaveReview": "Оставить отзыв",
+    "rating": "Оценка",
+    "reviewText": "Комментарий (необязательно)",
+    "submitReview": "Отправить отзыв",
+    "alreadyReviewed": "Вы уже оставили отзыв. Спасибо!"
+  },
+  "profile": {
+    "rating": "Рейтинг",
+    "noReviews": "Отзывов ещё нет",
+    "noReviewsYet": "Отзывов пока нет.",
+    "contact": "Контакт",
+    "signInToSeeContact": "Войдите, чтобы увидеть контакты.",
+    "signIn": "Войти",
+    "activeListings": "Активные объявления",
+    "noListings": "Нет активных объявлений.",
+    "reviews": "Отзывы"
+  },
+  "validation": {
+    "emailRequired": "E-mail обязателен",
+    "invalidEmail": "Введите корректный e-mail",
+    "codeMustBe6Digits": "Код должен состоять из 6 цифр",
+    "displayNameRequired": "Имя обязательно",
+    "displayNameMax": "Имя не длиннее 80 символов",
+    "telegramRequired": "Telegram обязателен",
+    "telegramInvalid": "Введите корректный Telegram (3–32: буквы, цифры, _)",
+    "cityMax": "Город не длиннее 80 символов",
+    "bioMax": "О себе не длиннее 500 символов",
+    "titleRequired": "Заголовок обязателен",
+    "titleMax": "Заголовок не длиннее 120 символов",
+    "descriptionRequired": "Описание обязательно",
+    "descriptionMax": "Описание не длиннее 4000 символов",
+    "categoryRequired": "Категория обязательна",
+    "categoryMax": "Категория не длиннее 60 символов",
+    "tagsMax": "Слишком длинные теги",
+    "priceModeInvalid": "Выберите корректный тип цены",
+    "priceMinInvalid": "Минимальная цена должна быть положительной",
+    "priceMaxInvalid": "Максимальная цена должна быть положительной",
+    "priceRangeInvalid": "Максимум должен быть не меньше минимума",
+    "priceRequired": "Для этого типа цены значение обязательно",
+    "kindInvalid": "Выберите корректный тип объявления",
+    "ratingInvalid": "Оценка должна быть от 1 до 5",
+    "reviewTextMax": "Отзыв не длиннее 1000 символов"
+  },
+  "errors": {
+    "auth": {
+      "required": "Войдите, чтобы продолжить."
+    },
+    "listing": {
+      "notFound": "Объявление не найдено.",
+      "forbidden": "Это не ваше объявление."
+    },
+    "engagement": {
+      "cannotEngageSelf": "Нельзя откликаться на собственное объявление."
+    }
+  }
+}

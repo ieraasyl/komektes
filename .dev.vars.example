@@ -1,0 +1,15 @@
+# Cloudflare Workers secrets for local development.
+# Loaded by wrangler during `bun run dev`. Copy to .dev.vars and fill in the values.
+
+# Public URL of the app — used by Better Auth.
+# local:  http://localhost:3000
+# remote: https://komektes.example
+BETTER_AUTH_URL=
+
+# Secret used to sign Better Auth sessions.
+# Generate with: openssl rand -hex 32
+BETTER_AUTH_SECRET=
+
+# (Optional) Google social login. Leave blank to disable.
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=

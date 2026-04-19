@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "komektes",
+  "compatibility_date": "2026-03-17",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "@tanstack/react-start/server-entry",
+  "observability": {
+    "enabled": true,
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "komektes-db",
+      "database_id": "adda8dc1-0883-4507-a3d0-a70fa1eab06b",
+      "migrations_dir": "drizzle",
+    },
+  ],
+}

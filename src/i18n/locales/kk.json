@@ -1,0 +1,266 @@
+{
+  "common": {
+    "switchLanguage": "Тілді ауыстыру",
+    "edit": "Өңдеу",
+    "delete": "Жою",
+    "save": "Сақтау",
+    "saving": "Сақталуда…",
+    "cancel": "Бас тарту",
+    "confirmAction": "Растайсыз ба?",
+    "back": "Артқа"
+  },
+  "brand": {
+    "name": "komektes",
+    "tagline": "Көршіге көмектес. Көмек алып отыр."
+  },
+  "nav": {
+    "browse": "Тізім",
+    "dashboard": "Кабинет",
+    "signIn": "Кіру",
+    "signOut": "Шығу",
+    "newListing": "Жаңа хабарландыру"
+  },
+  "landing": {
+    "heroTitle": "Көршілік өзара көмек алаңы.",
+    "heroSubtitle": "Көмектесетін адам тауып алыңыз — немесе өз дағдыңызды ұсыныңыз. Тегін, сағат бойынша, бекітілген немесе келісімді.",
+    "ctaBrowse": "Хабарландыруларды қарау",
+    "ctaPost": "Хабарландыру жариялау",
+    "liveLabel": "Қазір жанымызда",
+    "viewAll": "Барлық хабарландыру →",
+    "emptyTitle": "Әзірге бос",
+    "emptyDesc": "Алғашқы ұсыныс немесе сұранысты жариялаңыз.",
+    "offersTitle": "Мен көмектесе аламын",
+    "offersDesc": "Сабақ беру, жөндеу, дизайн, код — өз ісіңізді ұсыныңыз.",
+    "requestsTitle": "Маған көмек керек",
+    "requestsDesc": "Қауымдастықтан көмек сұраңыз. Әділ бағамен төлеңіз — немесе тегін.",
+    "howTitle": "Қалай жұмыс істейді",
+    "howStep1Title": "Кіру",
+    "howStep1Desc": "Email коды немесе Google. Telegram-ыңызды көрсетіңіз.",
+    "howStep2Title": "Жариялау немесе іздеу",
+    "howStep2Desc": "Категория, тег және бағамен ұсыныс не сұраныс жасаңыз.",
+    "howStep3Title": "Байланысу және баға беру",
+    "howStep3Desc": "Telegram-да сөйлесіңіз. Аяқталды деп белгілеп, баға қалдырыңыз."
+  },
+  "footer": {
+    "copyright": "© {{year}} komektes",
+    "terms": "Шарттар",
+    "privacy": "Құпиялылық"
+  },
+  "notFound": {
+    "error": "Бет табылмады",
+    "message": "Бұл бет табылмады немесе ауыстырылған.",
+    "goHome": "Басты бетке"
+  },
+  "errorPage": {
+    "title": "Бірдеңе дұрыс болмады",
+    "message": "Бетті жүктеу кезінде қате болды. Қайта көріңіз немесе басты бетке оралыңыз.",
+    "retry": "Қайталау",
+    "goHome": "Басты бетке"
+  },
+  "login": {
+    "backToHome": "Басты бетке",
+    "signInWithGoogle": "Google арқылы жалғастыру",
+    "redirecting": "Бағыттау…",
+    "or": "немесе",
+    "errorPrefix": "",
+    "goToDashboard": "Кабинетке өту",
+    "signIn": "Кіру",
+    "signInDesc": "Email енгізіңіз — біз сізге кіру коды жібереміз.",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "continue": "Жалғастыру",
+    "sendingCode": "Код жіберілуде…",
+    "verificationCode": "Растау коды",
+    "verificationDesc": "6 таңбалы кодты жібердік:",
+    "code": "Код",
+    "verifySignIn": "Растау және кіру",
+    "verifying": "Тексеру…",
+    "differentEmail": "Басқа email",
+    "resendCode": "Қайта жіберу",
+    "resendIn": "{{seconds}} сек кейін қайта жіберу",
+    "sendCodeFailed": "Кодты жіберу мүмкін болмады",
+    "invalidCode": "Растау коды дұрыс емес",
+    "resendFailed": "Кодты қайта жіберу мүмкін болмады",
+    "unknownError": "Белгісіз қате",
+    "errorLabel": "Қате"
+  },
+  "onboarding": {
+    "errorPrefix": "",
+    "title": "Профиліңізді толтырыңыз",
+    "desc": "Басқалардың сізді тануы үшін қысқа профиль.",
+    "completeProfile": "Профиліңізді толтырыңыз",
+    "completeProfileDesc": "Басқалардың сізді тануы үшін қысқа профиль.",
+    "bioHelp": "Міндетті емес. Жалпыға ашық профильде көрінеді.",
+    "somethingWentWrong": "Бірдеңе дұрыс болмады",
+    "displayName": "Көрсетілетін аты",
+    "displayNamePlaceholder": "Ада Лавлейс",
+    "telegram": "Telegram",
+    "telegramPlaceholder": "@your_handle",
+    "telegramHelp": "Кірген пайдаланушылар хабарландыруларыңызда көреді.",
+    "city": "Қала",
+    "cityPlaceholder": "Астана",
+    "cityOptional": "(міндетті емес)",
+    "bio": "Өзіңіз туралы",
+    "bioPlaceholder": "Несімен көмектесе аласыз, қандай тілдерді білесіз және т.б.",
+    "bioOptional": "(міндетті емес)",
+    "submit": "Профильді сақтау",
+    "saving": "Сақталуда…",
+    "signOutDifferent": "Шығу / басқа аккаунтпен кіру"
+  },
+  "dashboard": {
+    "title": "Кабинет",
+    "welcomeBack": "Қайта оралғаныңызбен,",
+    "yourProfile": "Сіздің профиліңіз",
+    "editProfile": "Өңдеу",
+    "myOffers": "Менің ұсыныстарым",
+    "myRequests": "Менің сұраныстарым",
+    "yourOffers": "Сіздің ұсыныстарыңыз",
+    "yourRequests": "Сіздің сұраныстарыңыз",
+    "noOffers": "Әзірге ұсыныс жоқ — несімен көмектесе алатыныңызды жариялаңыз.",
+    "noRequests": "Әзірге сұраныс жоқ — қауымдастықтан көмек сұраңыз.",
+    "newListing": "Жаңа хабарландыру",
+    "newOffer": "Жаңа ұсыныс",
+    "newRequest": "Жаңа сұраныс",
+    "close": "Жабу",
+    "reopen": "Қайта ашу",
+    "rating": "Рейтинг",
+    "ratingSummary": "{{avg}} ({{count}} пікір)",
+    "noReviews": "Әзірге пікір жоқ",
+    "noReviewsYet": "пікір әзірге жоқ"
+  },
+  "browse": {
+    "title": "Хабарландырулар",
+    "subtitle": "Жақын маңдағы адамдар ұсынатын және сұрайтын көмек.",
+    "search": "Іздеу",
+    "searchPlaceholder": "кілт сөз…",
+    "category": "Категория",
+    "categoryPlaceholder": "мысалы, репетиторлық",
+    "kind": "Түрі",
+    "priceMode": "Бағасы",
+    "apply": "Қолдану",
+    "empty": "Сүзгі бойынша хабарландыру табылмады.",
+    "kinds": {
+      "all": "Барлығы"
+    },
+    "priceModes": {
+      "any": "Кез келген"
+    }
+  },
+  "listingForm": {
+    "createTitle": "Жаңа хабарландыру",
+    "createDesc": "Қауымдастыққа несімен көмектесе алатыныңызды немесе қандай көмек керек екенін айтыңыз.",
+    "newTitle": "Жаңа хабарландыру",
+    "newDesc": "Қауымдастыққа несімен көмектесе алатыныңызды немесе қандай көмек керек екенін айтыңыз.",
+    "publish": "Жариялау",
+    "publishing": "Жарияланды…",
+    "editTitle": "Хабарландыруды өңдеу",
+    "editDesc": "Хабарландыру мәліметтерін жаңартыңыз.",
+    "kind": "Түрі",
+    "kinds": {
+      "offer": "Ұсыныс",
+      "request": "Сұраныс"
+    },
+    "kindHelp": {
+      "offer": "Басқалар үшін істей алатын нәрсеңіз.",
+      "request": "Сізге көмек керек нәрсе."
+    },
+    "title": "Тақырып",
+    "titlePlaceholder": "Мектеп оқушыларына математика репетиторы",
+    "description": "Сипаттама",
+    "descriptionPlaceholder": "Не кіреді, тәжірибеңіз, кесте және т.б.",
+    "category": "Категория",
+    "categoryPlaceholder": "репетиторлық, жөндеу, дизайн…",
+    "categoryHelp": "Еркін мәтін. Қысқа және бір ізді болсын.",
+    "city": "Қала",
+    "cityPlaceholder": "Астана",
+    "tags": "Тегтер",
+    "tagsPlaceholder": "математика, алгебра, кешке",
+    "tagsHelp": "Үтірмен бөліңіз. Адамдар сіздің хабарландыруды табуға көмектеседі.",
+    "priceMode": "Бағасы",
+    "priceModes": {
+      "fixed": "Бекітілген",
+      "hourly": "Сағат сайын",
+      "negotiable": "Келісімді",
+      "free": "Тегін"
+    },
+    "priceAmount": "Сома",
+    "priceMin": "Мин",
+    "priceMax": "Макс",
+    "priceMaxHelp": "Міндетті емес жоғарғы шек.",
+    "currency": "Валюта",
+    "errorPrefix": "",
+    "unknownError": "Бірдеңе дұрыс болмады"
+  },
+  "listingDetail": {
+    "back": "Тізімге қайту",
+    "byAuthor": "{{name}}",
+    "author": "Авторы",
+    "unknownAuthor": "Авторы белгісіз",
+    "contact": "Байланыс",
+    "contactNote": "Толығырақ Telegram-да сөйлесіңіз.",
+    "signInToContact": "Байланыс деректерін көру үшін кіріңіз.",
+    "signIn": "Кіру",
+    "thisIsYours": "Бұл сіздің хабарландыруыңыз.",
+    "markContacted": "Хабарластым",
+    "connecting": "Қосылуда…"
+  },
+  "engagement": {
+    "activeTitle": "Белсенді мәміле",
+    "activeDesc": "Көмек көрсетілгеннен кейін аяқталды деп белгілеңіз. Содан кейін баға қалдыра аласыз.",
+    "markComplete": "Аяқтау",
+    "leaveReview": "Пікір қалдыру",
+    "rating": "Бағасы",
+    "reviewText": "Пікір (міндетті емес)",
+    "submitReview": "Жіберу",
+    "alreadyReviewed": "Сіз бұл мәміле бойынша пікір қалдырғансыз. Рахмет!"
+  },
+  "profile": {
+    "rating": "Рейтинг",
+    "noReviews": "Әзірге пікір жоқ",
+    "noReviewsYet": "Пікір әзірге жоқ.",
+    "contact": "Байланыс",
+    "signInToSeeContact": "Байланыс деректерін көру үшін кіріңіз.",
+    "signIn": "Кіру",
+    "activeListings": "Белсенді хабарландырулар",
+    "noListings": "Белсенді хабарландыру жоқ.",
+    "reviews": "Пікірлер"
+  },
+  "validation": {
+    "emailRequired": "Email міндетті",
+    "invalidEmail": "Дұрыс email енгізіңіз",
+    "codeMustBe6Digits": "Код 6 цифрдан тұруы керек",
+    "displayNameRequired": "Аты міндетті",
+    "displayNameMax": "Ат 80 таңбадан аспасын",
+    "telegramRequired": "Telegram міндетті",
+    "telegramInvalid": "Дұрыс Telegram енгізіңіз (3–32: әріп, цифр, _)",
+    "cityMax": "Қала 80 таңбадан аспасын",
+    "bioMax": "Өзі туралы 500 таңбадан аспасын",
+    "titleRequired": "Тақырып міндетті",
+    "titleMax": "Тақырып 120 таңбадан аспасын",
+    "descriptionRequired": "Сипаттама міндетті",
+    "descriptionMax": "Сипаттама 4000 таңбадан аспасын",
+    "categoryRequired": "Категория міндетті",
+    "categoryMax": "Категория 60 таңбадан аспасын",
+    "tagsMax": "Тегтер тым ұзын",
+    "priceModeInvalid": "Дұрыс баға түрін таңдаңыз",
+    "priceMinInvalid": "Минималды баға оң сан болуы керек",
+    "priceMaxInvalid": "Максималды баға оң сан болуы керек",
+    "priceRangeInvalid": "Максимум минимумнан кем болмауы керек",
+    "priceRequired": "Бұл баға түріне мән міндетті",
+    "kindInvalid": "Дұрыс хабарландыру түрін таңдаңыз",
+    "ratingInvalid": "Баға 1-ден 5-ке дейін болуы керек",
+    "reviewTextMax": "Пікір 1000 таңбадан аспасын"
+  },
+  "errors": {
+    "auth": {
+      "required": "Жалғастыру үшін кіріңіз."
+    },
+    "listing": {
+      "notFound": "Хабарландыру табылмады.",
+      "forbidden": "Бұл сіздің хабарландыруыңыз емес."
+    },
+    "engagement": {
+      "cannotEngageSelf": "Өз хабарландыруыңызға жауап беру мүмкін емес."
+    }
+  }
+}
