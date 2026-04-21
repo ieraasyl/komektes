@@ -49,11 +49,15 @@ TanStack Start (React) on Cloudflare Workers. D1 + Drizzle ORM for storage. bett
    bun run db:migrate:local
    ```
 
-## Email OTP in development
+## Email OTP (Google Apps Script)
 
-OTP delivery is intentionally not wired to a real email provider in this MVP. During development the OTP is **logged to the server console** by `sendVerificationOTP` in `src/lib/auth.server.ts`. You can also read it from the `verification` table via `bun run db:studio:local`.
+For real inboxes, deploy a **Google Apps Script** web app that sends mail via `GmailApp`. The Worker calls it from `sendVerificationOTP` in `src/lib/auth.server.ts` when `GAS_URL` and `GAS_SECRET` are set.
 
-For production, plug in your preferred transactional email provider (Resend, Postmark, Cloudflare Email Routing, etc.) inside that function.
+1. In [Google Apps Script](https://script.google.com), create a project and paste [this code](https://gist.github.com/ieraasyl/27ce286ee3fda0ff367beef52ad3f846) (OTP email only).
+2. **Deploy** → New deployment → Type: Web app → Execute as: **Me** → Who has access: **Anyone**.
+3. **Project Settings** → **Script properties**: add `GAS_SECRET` (generate a long random string). Copy the web app URL into `GAS_URL` and use the same secret in `GAS_SECRET` in `.dev.vars` / `wrangler secret put GAS_SECRET`.
+
+**Without GAS:** leave `GAS_URL` / `GAS_SECRET` empty. The Worker logs `[OTP] GAS not configured — …` with the code, or inspect the `verification` table (`bun run db:studio:local`).
 
 ## Google OAuth (optional)
 

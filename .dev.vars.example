@@ -10,6 +10,11 @@ BETTER_AUTH_URL=
 # Generate with: openssl rand -hex 32
 BETTER_AUTH_SECRET=
 
-# (Optional) Google social login. Leave blank to disable.
+# OTP email delivery via Google Apps Script webhook.
+# When unset, OTPs are only logged in the Worker console (for local dev).
+GAS_URL=
+GAS_SECRET=
+
+# Google social login. Leave blank to disable.
 GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=

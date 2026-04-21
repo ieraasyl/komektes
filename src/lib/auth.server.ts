@@ -8,6 +8,8 @@ interface AuthEnv {
   DB: D1Database;
   BETTER_AUTH_SECRET: string;
   BETTER_AUTH_URL: string;
+  GAS_URL?: string;
+  GAS_SECRET?: string;
   GOOGLE_CLIENT_ID?: string;
   GOOGLE_CLIENT_SECRET?: string;
 }
@@ -20,6 +22,8 @@ export function getAuth() {
   if (!url) throw new Error('BETTER_AUTH_URL is not set');
   if (!d1Binding) throw new Error('D1 binding (DB) is not configured');
   const db = getDb(d1Binding);
+  const gasUrl = authEnv.GAS_URL;
+  const gasSecret = authEnv.GAS_SECRET;
   const googleClientId = authEnv.GOOGLE_CLIENT_ID;
   const googleClientSecret = authEnv.GOOGLE_CLIENT_SECRET;
   const socialProviders =
@@ -45,7 +49,28 @@ export function getAuth() {
         otpLength: 6,
         expiresIn: 300,
         async sendVerificationOTP({ email, otp, type }) {
-          console.log(`[OTP] type=${type} email=${email} otp=${otp}`);
+          if (!gasUrl || !gasSecret) {
+            console.log(`[OTP] GAS not configured — type=${type} email=${email} otp=${otp}`);
+            return;
+          }
+          try {
+            const res = await fetch(gasUrl, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                secret: gasSecret,
+                action: 'send-otp',
+                email,
+                otp,
+                type,
+              }),
+            });
+            if (!res.ok) {
+              console.error(`[OTP] GAS returned HTTP ${res.status}`);
+            }
+          } catch (err) {
+            console.error('[OTP] Failed to call GAS:', err);
+          }
         },
       }),
     ],
