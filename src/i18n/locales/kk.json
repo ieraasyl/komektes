@@ -1,4 +1,10 @@
 {
+  "theme": {
+    "switchTheme": "Теманы ауыстыру",
+    "light": "Жарық",
+    "dark": "Қараңғы",
+    "auto": "Авто"
+  },
   "common": {
     "switchLanguage": "Тілді ауыстыру",
     "edit": "Өңдеу",
@@ -12,6 +18,11 @@
   "brand": {
     "name": "komektes",
     "tagline": "Жақындағы адамдарға көмектес. Қажетте көмек сұра."
+  },
+  "header": {
+    "accountMenu": "Аккаунт және баптаулар",
+    "language": "Тіл",
+    "appearance": "Келбеті"
   },
   "nav": {
     "browse": "Тізім",

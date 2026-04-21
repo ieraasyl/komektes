@@ -7,7 +7,7 @@ import { listActiveByAuthor } from '@/lib/listings.server';
 import { listReviewsForUser, getRatingAggregate } from '@/lib/reviews.server';
 import { getSession } from '@/lib/auth.server';
 import { getRequest } from '@tanstack/react-start/server';
-import { AuthHeader } from '@/components/AuthHeader';
+import { AppHeader } from '@/components/AppHeader';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import ListingCard from '@/components/listings/ListingCard';
@@ -64,7 +64,7 @@ function ProfilePage() {
     .join('');
   return (
     <div className="min-h-screen bg-background">
-      <AuthHeader />
+      <AppHeader />
 
       <main className="mx-auto max-w-5xl px-6 py-10">
         <Card className="mb-8">

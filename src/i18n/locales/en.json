@@ -1,4 +1,10 @@
 {
+  "theme": {
+    "switchTheme": "Switch theme",
+    "light": "Light",
+    "dark": "Dark",
+    "auto": "Auto"
+  },
   "common": {
     "switchLanguage": "Switch language",
     "edit": "Edit",
@@ -12,6 +18,11 @@
   "brand": {
     "name": "komektes",
     "tagline": "Help people nearby. Get a hand when you need it."
+  },
+  "header": {
+    "accountMenu": "Account and settings",
+    "language": "Language",
+    "appearance": "Appearance"
   },
   "nav": {
     "browse": "Browse",

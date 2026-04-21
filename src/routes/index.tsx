@@ -13,8 +13,7 @@ import {
 } from '@phosphor-icons/react';
 import { getSession } from '@/lib/auth.server';
 import { browseListings } from '@/lib/listings.server';
-import { AuthHeader } from '@/components/AuthHeader';
-import { GradientOrbs } from '@/components/ui/background';
+import { AppHeader } from '@/components/AppHeader';
 import { Button } from '@/components/ui/button';
 const loadLanding = createServerFn({ method: 'GET' }).handler(async () => {
   const request = getRequest();
@@ -64,8 +63,7 @@ function LandingPage() {
   ] as const;
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-background">
-      <GradientOrbs />
-      <AuthHeader />
+      <AppHeader />
 
       <main className="relative z-10 mx-auto max-w-6xl px-6 pt-12 pb-20 md:pt-20">
         <section className="grid gap-12 md:grid-cols-[minmax(0,1fr)_360px] md:items-center md:gap-16">
@@ -112,24 +110,24 @@ function LandingPage() {
           <div className="relative mx-auto max-w-4xl">
             <div
               aria-hidden
-              className="absolute top-6 left-[12%] hidden h-px w-[76%] bg-border md:block"
+              className="absolute top-6 left-[16.67%] hidden h-px w-[66.66%] bg-border md:block"
             />
 
             <ol className="relative grid gap-10 md:grid-cols-3 md:gap-8">
               {steps.map(({ key, icon: Icon }) => (
-                <li key={key} className="text-center md:text-left">
-                  <div className="relative mx-auto mb-4 flex size-12 items-center justify-center bg-background md:mx-0">
+                <li key={key} className="flex flex-col items-center text-center">
+                  <div className="relative mb-4 flex size-12 items-center justify-center bg-background">
                     <span className="inline-flex size-12 items-center justify-center rounded-full bg-primary text-primary-foreground ring-8 ring-background">
                       <Icon weight="bold" className="size-5" />
                     </span>
-                    <span className="absolute -top-2 -right-2 inline-flex size-6 items-center justify-center rounded-full bg-card text-[10px] font-bold tracking-wider text-muted-foreground ring-1 ring-border md:-top-1 md:right-auto md:left-9">
+                    <span className="absolute -top-2 -right-2 inline-flex size-6 items-center justify-center rounded-full bg-card text-[10px] font-bold tracking-wider text-muted-foreground ring-1 ring-border">
                       {String(key).padStart(2, '0')}
                     </span>
                   </div>
                   <h3 className="mb-1.5 text-base font-semibold text-foreground">
                     {t(`landing.howStep${key}Title`)}
                   </h3>
-                  <p className="mx-auto max-w-xs text-sm leading-relaxed text-muted-foreground md:mx-0">
+                  <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">
                     {t(`landing.howStep${key}Desc`)}
                   </p>
                 </li>

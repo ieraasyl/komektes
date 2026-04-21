@@ -1,6 +1,6 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { ArrowLeftIcon } from '@phosphor-icons/react';
-import { AuthHeader } from '@/components/AuthHeader';
+import { AppHeader } from '@/components/AppHeader';
 export const Route = createFileRoute('/privacy')({
   component: PrivacyPage,
   head: () => ({
@@ -17,7 +17,7 @@ function PrivacyPage() {
   const navigate = useNavigate();
   return (
     <div className="flex min-h-screen flex-col bg-background">
-      <AuthHeader />
+      <AppHeader />
       <main className="mx-auto w-full max-w-3xl flex-1 px-6 py-12">
         <h1 className="mb-2 text-3xl font-bold tracking-tight text-foreground">Privacy Policy</h1>
         <p className="mb-10 text-sm text-muted-foreground">Last updated: April 2026</p>

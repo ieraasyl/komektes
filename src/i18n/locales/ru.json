@@ -1,4 +1,10 @@
 {
+  "theme": {
+    "switchTheme": "Сменить тему",
+    "light": "Светлая",
+    "dark": "Тёмная",
+    "auto": "Авто"
+  },
   "common": {
     "switchLanguage": "Сменить язык",
     "edit": "Редактировать",
@@ -12,6 +18,11 @@
   "brand": {
     "name": "komektes",
     "tagline": "Помогайте людям рядом. Просите помощь, когда она нужна."
+  },
+  "header": {
+    "accountMenu": "Аккаунт и настройки",
+    "language": "Язык",
+    "appearance": "Оформление"
   },
   "nav": {
     "browse": "Каталог",

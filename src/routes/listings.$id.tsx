@@ -15,7 +15,7 @@ import { createReview as createReviewSrv, hasUserReviewed } from '@/lib/reviews.
 import { reviewSchema, tagsToArray } from '@/lib/validation';
 import { webHapticsOptions } from '@/lib/web-haptics';
 import { ArrowLeftIcon, MapPinIcon, PaperPlaneTiltIcon } from '@phosphor-icons/react';
-import { AuthHeader } from '@/components/AuthHeader';
+import { AppHeader } from '@/components/AppHeader';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
@@ -145,7 +145,7 @@ function ListingDetailPage() {
   };
   return (
     <div className="min-h-screen bg-background">
-      <AuthHeader />
+      <AppHeader />
 
       <main className="mx-auto max-w-3xl px-6 py-10">
         <div className="mb-6 text-sm text-muted-foreground">

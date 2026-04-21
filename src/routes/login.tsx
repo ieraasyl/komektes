@@ -12,8 +12,7 @@ import { emailSchema, otpSchema } from '@/lib/validation';
 import { webHapticsOptions } from '@/lib/web-haptics';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { GradientOrbs } from '@/components/ui/background';
-import { AuthHeader } from '@/components/AuthHeader';
+import { AppHeader } from '@/components/AppHeader';
 import EmailForm from '@/components/login/EmailForm';
 import OtpForm from '@/components/login/OtpForm';
 const getPostLoginDestination = createServerFn({ method: 'GET' }).handler(async () => {
@@ -187,10 +186,8 @@ function LoginPage() {
   }, [redirect, t, trigger]);
   return (
     <div className="flex min-h-screen flex-col bg-background">
-      <AuthHeader />
+      <AppHeader />
       <div className="relative flex flex-1 items-center justify-center p-6">
-        <GradientOrbs />
-
         <div className="relative z-10 w-full max-w-sm">
           <Card className="shadow-sm">
             <CardContent className="p-6">

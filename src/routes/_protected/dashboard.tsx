@@ -1,10 +1,9 @@
-import { createFileRoute, Link, useNavigate } from '@tanstack/react-router';
+import { createFileRoute, Link } from '@tanstack/react-router';
 import { createServerFn } from '@tanstack/react-start';
 import { getRequest } from '@tanstack/react-start/server';
 import { useTranslation } from 'react-i18next';
 import { useMutation, useQueryClient, useSuspenseQuery, queryOptions } from '@tanstack/react-query';
 import { useWebHaptics } from 'web-haptics/react';
-import { signOut } from '@/lib/auth-client';
 import { getSession } from '@/lib/auth.server';
 import {
   listMyListings,
@@ -19,7 +18,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { ConfirmButton } from '@/components/ui/confirm-button';
 import { Badge } from '@/components/ui/badge';
-import DashboardHeader from '@/components/dashboard/DashboardHeader';
+import { AppHeader } from '@/components/AppHeader';
 import type { Listing } from '@/db/schema';
 const getDashboardData = createServerFn({ method: 'GET' }).handler(async () => {
   const request = getRequest();
@@ -34,7 +33,6 @@ const getDashboardData = createServerFn({ method: 'GET' }).handler(async () => {
     profile,
     listings,
     rating,
-    user: { id: session.user.id, email: session.user.email },
   };
 });
 const closeListingFn = createServerFn({ method: 'POST' })
@@ -63,7 +61,6 @@ export const Route = createFileRoute('/_protected/dashboard')({
 });
 function Dashboard() {
   const { t } = useTranslation();
-  const navigate = useNavigate();
   const queryClient = useQueryClient();
   const { trigger } = useWebHaptics(webHapticsOptions);
   const { data } = useSuspenseQuery(dashboardQuery);
@@ -84,15 +81,11 @@ function Dashboard() {
     },
     onError: () => trigger?.('error'),
   });
-  const handleSignOut = async () => {
-    await signOut();
-    void navigate({ to: '/' });
-  };
   const offers = data.listings.filter((l: Listing) => l.kind === 'offer');
   const requests = data.listings.filter((l: Listing) => l.kind === 'request');
   return (
     <div className="min-h-screen bg-background">
-      <DashboardHeader email={data.user.email} onSignOut={handleSignOut} />
+      <AppHeader />
 
       <main className="mx-auto max-w-6xl px-6 py-12">
         <div className="mb-10 flex flex-wrap items-end justify-between gap-4">

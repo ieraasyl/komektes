@@ -11,10 +11,10 @@ import { getCookie } from '@tanstack/react-start/server';
 import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools';
 import { TanStackDevtools } from '@tanstack/react-devtools';
 import { useTranslation } from 'react-i18next';
-import { AuthHeader } from '@/components/AuthHeader';
+import { AppHeader } from '@/components/AppHeader';
 import { Button } from '@/components/ui/button';
-import { GradientOrbs } from '@/components/ui/background';
 import i18n from '@/i18n';
+import { THEME_INIT_SCRIPT } from '@/lib/theme';
 import appCss from '@/styles.css?url';
 const getServerLocale = createServerFn({ method: 'GET' }).handler(async () => {
   return getCookie('locale') || 'en';
@@ -24,9 +24,8 @@ function NotFoundPage() {
   const navigate = useNavigate();
   return (
     <div className="flex min-h-screen flex-col bg-background">
-      <AuthHeader />
+      <AppHeader />
       <div className="relative flex flex-1 items-center justify-center p-6">
-        <GradientOrbs />
         <div className="relative z-10 max-w-xl text-center">
           <p className="mb-4 text-sm font-medium tracking-wide text-muted-foreground uppercase">
             {t('notFound.error')}
@@ -48,9 +47,8 @@ function RootErrorPage({ error, reset }: ErrorComponentProps) {
   const navigate = useNavigate();
   return (
     <div className="flex min-h-screen flex-col bg-background">
-      <AuthHeader />
+      <AppHeader />
       <div className="relative flex flex-1 items-center justify-center p-6">
-        <GradientOrbs />
         <div className="relative z-10 max-w-xl text-center">
           <p className="mb-4 text-sm font-medium tracking-wide text-muted-foreground uppercase">
             {t('errorPage.title')}
@@ -108,8 +106,9 @@ export const Route = createRootRouteWithContext<{
 function RootDocument({ children }: { children: React.ReactNode }) {
   const { i18n } = useTranslation();
   return (
-    <html lang={i18n.language || 'en'}>
+    <html lang={i18n.language || 'en'} suppressHydrationWarning>
       <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
         <HeadContent />
       </head>
       <body>

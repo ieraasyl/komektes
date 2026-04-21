@@ -6,7 +6,7 @@ import { MagnifyingGlassIcon } from '@phosphor-icons/react';
 import { browseListings } from '@/lib/listings.server';
 import { browseFiltersSchema, type BrowseFilters } from '@/lib/validation';
 import { LISTING_KINDS, PRICE_MODES } from '@/db/schema';
-import { AuthHeader } from '@/components/AuthHeader';
+import { AppHeader } from '@/components/AppHeader';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Field, FieldLabel } from '@/components/ui/field';
@@ -73,7 +73,7 @@ function BrowsePage() {
   const priceMode = search.priceMode ?? 'any';
   return (
     <div className="min-h-screen bg-background">
-      <AuthHeader />
+      <AppHeader />
 
       <main className="mx-auto max-w-6xl px-6 py-12">
         <header className="mb-8">

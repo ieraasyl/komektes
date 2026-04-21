@@ -19,6 +19,8 @@
     "db:seed:generate": "bun run scripts/seed.ts",
     "db:seed:local": "bun run scripts/seed.ts && wrangler d1 execute komektes-db --local --file=scripts/seed.sql",
     "db:seed:remote": "bun run scripts/seed.ts && wrangler d1 execute komektes-db --remote --file=scripts/seed.sql",
+    "db:seed:remove:local": "wrangler d1 execute komektes-db --local --command \"DELETE FROM user WHERE id LIKE 'seed_user_%';\"",
+    "db:seed:remove:remote": "wrangler d1 execute komektes-db --remote --command \"DELETE FROM user WHERE id LIKE 'seed_user_%';\"",
     "types": "wrangler types",
     "deploy": "bun install && bun run build && wrangler deploy",
     "lint": "eslint .",
@@ -80,7 +82,6 @@
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.59.0",
     "vite": "^8.0.9",
-    "vite-tsconfig-paths": "^6.1.1",
     "vitest": "^4.1.4",
     "wrangler": "^4.84.0"
   }

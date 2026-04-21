@@ -10,8 +10,7 @@ import { profileSchema } from '@/lib/validation';
 import { signOut } from '@/lib/auth-client';
 import { webHapticsOptions } from '@/lib/web-haptics';
 import { Card, CardContent } from '@/components/ui/card';
-import { GradientOrbs } from '@/components/ui/background';
-import { AuthHeader } from '@/components/AuthHeader';
+import { AppHeader } from '@/components/AppHeader';
 import OnboardingForm, { type OnboardingFormState } from '@/components/onboarding/OnboardingForm';
 const checkOnboardingStatus = createServerFn({ method: 'GET' }).handler(async () => {
   const request = getRequest();
@@ -106,10 +105,8 @@ function OnboardingPage() {
   };
   return (
     <div className="flex min-h-screen flex-col bg-background">
-      <AuthHeader />
+      <AppHeader />
       <div className="relative flex flex-1 items-center justify-center p-6">
-        <GradientOrbs />
-
         <div className="relative z-10 w-full max-w-md">
           <Card className="shadow-sm">
             <CardContent className="p-6">

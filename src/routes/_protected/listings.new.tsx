@@ -1,4 +1,4 @@
-import { createFileRoute, redirect, useNavigate, useRouteContext } from '@tanstack/react-router';
+import { createFileRoute, redirect, useNavigate } from '@tanstack/react-router';
 import { createServerFn } from '@tanstack/react-start';
 import { getRequest } from '@tanstack/react-start/server';
 import { useState, useMemo } from 'react';
@@ -9,8 +9,7 @@ import { createListing } from '@/lib/listings.server';
 import { listingSchema } from '@/lib/validation';
 import { webHapticsOptions } from '@/lib/web-haptics';
 import { Card, CardContent } from '@/components/ui/card';
-import DashboardHeader from '@/components/dashboard/DashboardHeader';
-import { signOut } from '@/lib/auth-client';
+import { AppHeader } from '@/components/AppHeader';
 import ListingForm, {
   emptyListingForm,
   type ListingFormState,
@@ -52,7 +51,6 @@ function NewListingPage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const search = Route.useSearch();
-  const { user } = useRouteContext({ from: '/_protected' });
   const { trigger } = useWebHaptics(webHapticsOptions);
   const initial = useMemo<ListingFormState>(
     () => ({
@@ -83,13 +81,7 @@ function NewListingPage() {
   };
   return (
     <div className="min-h-screen bg-background">
-      <DashboardHeader
-        email={user.email}
-        onSignOut={async () => {
-          await signOut();
-          await navigate({ to: '/' });
-        }}
-      />
+      <AppHeader />
 
       <main className="mx-auto max-w-3xl px-6 py-12">
         <Card>
