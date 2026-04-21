@@ -10,10 +10,8 @@ import { listingSchema } from '@/lib/validation';
 import { webHapticsOptions } from '@/lib/web-haptics';
 import { Card, CardContent } from '@/components/ui/card';
 import { AppHeader } from '@/components/AppHeader';
-import ListingForm, {
-  emptyListingForm,
-  type ListingFormState,
-} from '@/components/listings/ListingForm';
+import ListingForm, { type ListingFormState } from '@/components/listings/ListingForm';
+import { emptyListingForm } from '@/components/listings/listing-form-state';
 import { LISTING_KINDS, type ListingKind } from '@/db/schema';
 const createListingFn = createServerFn({ method: 'POST' })
   .inputValidator((input: ListingFormState) => input)

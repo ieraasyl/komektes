@@ -19,8 +19,7 @@ export const auth = betterAuth({
     }),
   plugins: [
     emailOTP({
-      async sendVerificationOTP() {
-      },
+      async sendVerificationOTP() {},
     }),
   ],
 });

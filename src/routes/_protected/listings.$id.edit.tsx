@@ -1,9 +1,4 @@
-import {
-  createFileRoute,
-  notFound,
-  redirect,
-  useNavigate,
-} from '@tanstack/react-router';
+import { createFileRoute, notFound, redirect, useNavigate } from '@tanstack/react-router';
 import { createServerFn } from '@tanstack/react-start';
 import { getRequest } from '@tanstack/react-start/server';
 import { useState } from 'react';

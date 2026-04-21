@@ -1,0 +1,1 @@
+CREATE INDEX `idx_listing_status_created` ON `listing` (`status`,`created_at`);

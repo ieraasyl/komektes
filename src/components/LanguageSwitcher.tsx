@@ -3,10 +3,7 @@
 import { useTranslation } from 'react-i18next';
 import { useWebHaptics } from 'web-haptics/react';
 import { supportedLngs, type SupportedLng } from '@/i18n';
-import {
-  preferenceOptionIdle,
-  preferenceOptionSelected,
-} from '@/lib/header-preference-styles';
+import { preferenceOptionIdle, preferenceOptionSelected } from '@/lib/header-preference-styles';
 import { cn } from '@/lib/utils';
 import { webHapticsOptions } from '@/lib/web-haptics';
 

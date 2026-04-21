@@ -47,7 +47,11 @@ export type HeaderSettingsMenuProps = {
   className?: string;
 };
 
-export function HeaderSettingsMenu({ accountEmail, onSignOut, className }: HeaderSettingsMenuProps) {
+export function HeaderSettingsMenu({
+  accountEmail,
+  onSignOut,
+  className,
+}: HeaderSettingsMenuProps) {
   const { t, i18n } = useTranslation();
   const { trigger } = useWebHaptics(webHapticsOptions);
   const { mode, setThemeMode } = useTheme();

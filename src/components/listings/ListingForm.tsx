@@ -45,18 +45,6 @@ export type ListingFormState = {
   priceMax: string;
   currency: string;
 };
-export const emptyListingForm: ListingFormState = {
-  kind: 'offer',
-  title: '',
-  description: '',
-  category: '',
-  tags: '',
-  city: '',
-  priceMode: 'negotiable',
-  priceMin: '',
-  priceMax: '',
-  currency: 'KZT',
-};
 export default function ListingForm({
   state,
   setState,

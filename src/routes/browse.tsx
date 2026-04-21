@@ -131,12 +131,7 @@ function BrowsePage() {
               <p className="mb-2 text-xs font-medium text-muted-foreground">{t('browse.kind')}</p>
               <div className="flex flex-wrap gap-2">
                 {kindOptions.map((k) => (
-                  <PillButton
-                    key={k}
-                    value={k}
-                    active={kind === k}
-                    onClick={onKindClick}
-                  >
+                  <PillButton key={k} value={k} active={kind === k} onClick={onKindClick}>
                     {k === 'all' ? t('browse.kinds.all') : t(`listingForm.kinds.${k}`)}
                   </PillButton>
                 ))}
@@ -149,12 +144,7 @@ function BrowsePage() {
               </p>
               <div className="flex flex-wrap gap-2">
                 {priceOptions.map((m) => (
-                  <PillButton
-                    key={m}
-                    value={m}
-                    active={priceMode === m}
-                    onClick={onPriceModeClick}
-                  >
+                  <PillButton key={m} value={m} active={priceMode === m} onClick={onPriceModeClick}>
                     {m === 'any' ? t('browse.priceModes.any') : t(`listingForm.priceModes.${m}`)}
                   </PillButton>
                 ))}

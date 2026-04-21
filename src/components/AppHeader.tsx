@@ -58,7 +58,7 @@ export function AppHeader() {
             </Link>
           ) : null}
         </nav>
-        <div className="flex min-w-0 items-center justify-end justify-self-end gap-2 md:gap-3">
+        <div className="flex min-w-0 items-center justify-end gap-2 justify-self-end md:gap-3">
           <HeaderSettingsMenu
             accountEmail={user?.email}
             onSignOut={user ? handleSignOut : undefined}

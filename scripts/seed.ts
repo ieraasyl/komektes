@@ -411,8 +411,7 @@ const LISTINGS: SeedListingTemplate[] = [
     authorNum: 1,
     kind: 'offer',
     title: 'Подготовка к ЕНТ: математика, интенсив',
-    description:
-      'Три месяца до экзамена: типовые задачи + домашка. Проверяю, иначе смысла нет.',
+    description: 'Три месяца до экзамена: типовые задачи + домашка. Проверяю, иначе смысла нет.',
     category: 'Tutoring',
     tags: 'ent, math, intensive',
     city: 'Almaty',
@@ -473,7 +472,8 @@ const LISTINGS: SeedListingTemplate[] = [
     authorNum: 3,
     kind: 'offer',
     title: 'Лендинг под ключ для малого бизнеса',
-    description: 'Tilda или Webflow, до 6 блоков, форма, Метрика/га при желании. Не «вау-арт», нормальный лендинг.',
+    description:
+      'Tilda или Webflow, до 6 блоков, форма, Метрика/га при желании. Не «вау-арт», нормальный лендинг.',
     category: 'Design',
     tags: 'landing, web design, tilda, webflow',
     city: 'Almaty',
@@ -485,7 +485,8 @@ const LISTINGS: SeedListingTemplate[] = [
     authorNum: 3,
     kind: 'offer',
     title: 'UI/UX редизайн мобильного приложения',
-    description: 'До 20 экранов, Figma, флоу + UI-кит. Обычно две-три недели, если не летим в крайности.',
+    description:
+      'До 20 экранов, Figma, флоу + UI-кит. Обычно две-три недели, если не летим в крайности.',
     category: 'Design',
     tags: 'ui, ux, figma, mobile',
     priceMode: 'negotiable',
@@ -569,8 +570,7 @@ const LISTINGS: SeedListingTemplate[] = [
     authorNum: 6,
     kind: 'offer',
     title: 'Code review & mentorship for junior iOS devs',
-    description:
-      'До полутора часов в неделю. Смотрим PR, MVVM/TCA, что у вас горит по Swift.',
+    description: 'До полутора часов в неделю. Смотрим PR, MVVM/TCA, что у вас горит по Swift.',
     category: 'Programming',
     tags: 'ios, swift, mentorship, code review',
     priceMode: 'hourly',
@@ -581,7 +581,8 @@ const LISTINGS: SeedListingTemplate[] = [
     authorNum: 6,
     kind: 'offer',
     title: 'Прототип iOS-приложения за 2 недели',
-    description: 'SwiftUI + Supabase или Firebase. Норм для MVP, чтобы показать «вот оно крутится».',
+    description:
+      'SwiftUI + Supabase или Firebase. Норм для MVP, чтобы показать «вот оно крутится».',
     category: 'Programming',
     tags: 'ios, swiftui, mvp, prototype',
     priceMode: 'fixed',
@@ -604,8 +605,7 @@ const LISTINGS: SeedListingTemplate[] = [
     authorNum: 7,
     kind: 'offer',
     title: 'Russian as a foreign language: A0 to B2',
-    description:
-      'Онлайн, подбираю материалы под человека, а не «курс для всех».',
+    description: 'Онлайн, подбираю материалы под человека, а не «курс для всех».',
     category: 'Tutoring',
     tags: 'russian, rfl, online, expats',
     priceMode: 'hourly',
@@ -617,7 +617,8 @@ const LISTINGS: SeedListingTemplate[] = [
     authorNum: 8,
     kind: 'offer',
     title: 'Свадебная фотосъёмка, полный день',
-    description: 'До 10 ч съёмки, отдаю 200+ обработанных. Репортаж + пара постановочных, без пластиковых улыбок по умолчанию.',
+    description:
+      'До 10 ч съёмки, отдаю 200+ обработанных. Репортаж + пара постановочных, без пластиковых улыбок по умолчанию.',
     category: 'Photography',
     tags: 'wedding, photography, full day',
     city: 'Karaganda',
@@ -1076,7 +1077,8 @@ const LISTINGS: SeedListingTemplate[] = [
     authorNum: 26,
     kind: 'offer',
     title: 'Personal training: 8 sessions / month',
-    description: 'Сила + чуть гибкости, раз в неделю спрашиваю «как оно». Про еду, базово. Залы в Алмате.',
+    description:
+      'Сила + чуть гибкости, раз в неделю спрашиваю «как оно». Про еду, базово. Залы в Алмате.',
     category: 'Fitness',
     tags: 'pt, strength, mobility',
     city: 'Almaty',
@@ -1205,7 +1207,8 @@ const LISTINGS: SeedListingTemplate[] = [
     authorNum: 7,
     kind: 'request',
     title: 'Need a logo for a small Russian-tutoring brand',
-    description: 'Надпись + простая иконка, две правки входят. Около 120к, если не упрёмся в правки №17.',
+    description:
+      'Надпись + простая иконка, две правки входят. Около 120к, если не упрёмся в правки №17.',
     category: 'Design',
     tags: 'logo, branding',
     priceMode: 'fixed',
@@ -1239,7 +1242,8 @@ const LISTINGS: SeedListingTemplate[] = [
     authorNum: 26,
     kind: 'request',
     title: 'Need a nutritionist: meal plan for cutting',
-    description: 'План на 6 недель, раз в неделю отпишемся как идёт. Халяль продукты могу заложить.',
+    description:
+      'План на 6 недель, раз в неделю отпишемся как идёт. Халяль продукты могу заложить.',
     category: 'Fitness',
     tags: 'nutrition, plan, cutting',
     priceMode: 'fixed',
@@ -1321,7 +1325,8 @@ const LISTINGS: SeedListingTemplate[] = [
     authorNum: 5,
     kind: 'request',
     title: 'Help me build a personal portfolio site',
-    description: 'Одна страница, штук пять блоков, весь текст на EN. Tilda или Framer, мне без разницы.',
+    description:
+      'Одна страница, штук пять блоков, весь текст на EN. Tilda или Framer, мне без разницы.',
     category: 'Programming',
     tags: 'portfolio, web',
     priceMode: 'fixed',
