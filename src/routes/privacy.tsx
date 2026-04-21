@@ -5,11 +5,10 @@ export const Route = createFileRoute('/privacy')({
   component: PrivacyPage,
   head: () => ({
     meta: [
-      { title: 'Privacy Policy — komektes' },
+      { title: 'Privacy Policy | komektes' },
       {
         name: 'description',
-        content:
-          'Privacy policy for komektes — what we store, why we store it, and how to delete it.',
+        content: 'What komektes stores, why it needs it, and how to get your data removed.',
       },
     ],
   }),
@@ -37,9 +36,8 @@ function PrivacyPage() {
           <section>
             <h2 className="mb-2 text-lg font-semibold text-foreground">2. How we use it</h2>
             <p>
-              We use this information solely to operate the marketplace: authenticating you, showing
-              your listings to other users, and letting other signed-in users contact you on
-              Telegram.
+              We use it to log you in, show your listings, and let signed-in users see your Telegram
+              handle so they can message you.
             </p>
           </section>
 

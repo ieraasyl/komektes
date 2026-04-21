@@ -5,11 +5,11 @@ export const Route = createFileRoute('/terms')({
   component: TermsPage,
   head: () => ({
     meta: [
-      { title: 'Terms of Service — komektes' },
+      { title: 'Terms of Service | komektes' },
       {
         name: 'description',
         content:
-          'Terms of service for komektes — what we expect of users, what we provide, and limits of liability.',
+          'What you agree to by using komektes: behaviour we allow, what the site does, and where our liability ends.',
       },
     ],
   }),
@@ -35,9 +35,9 @@ function TermsPage() {
           <section>
             <h2 className="mb-2 text-lg font-semibold text-foreground">2. What komektes is</h2>
             <p>
-              komektes is a peer-to-peer marketplace for offering and requesting help. We provide
-              listings and contact discovery; we are not a party to any transaction between users.
-              Payment, scheduling, and delivery happen off-platform.
+              komektes hosts listings and shows how to reach people on Telegram. We are not part of
+              any deal between users. Money, timing, and the actual help happen between you, not
+              through us.
             </p>
           </section>
 

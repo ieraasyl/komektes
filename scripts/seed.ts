@@ -83,7 +83,7 @@ const PEOPLE: SeedUser[] = [
     email: 'aigerim.bekova@example.com',
     telegram: 'aigerim_b',
     city: 'Almaty',
-    bio: 'Math tutor, 6 years experience. Patient with beginners. KZ/RU/EN.',
+    bio: 'Math tutor ~6 yrs. Fine with folks who forgot half of school. KZ/RU/EN.',
     joinedDaysAgo: 84,
   },
   {
@@ -123,7 +123,7 @@ const PEOPLE: SeedUser[] = [
     email: 'aliya.zhuma@example.com',
     telegram: 'aliya_english',
     city: 'Almaty',
-    bio: 'IELTS prep tutor. CEFR B1→C1 in 6 months. First lesson free.',
+    bio: 'IELTS, mostly people stuck around B1. First lesson free if we get on.',
     joinedDaysAgo: 66,
   },
   {
@@ -133,7 +133,7 @@ const PEOPLE: SeedUser[] = [
     email: 'sanzhar.kim@example.com',
     telegram: 'sanzhar_dev',
     city: 'Almaty',
-    bio: 'iOS / Swift developer. Open to small contracts and code reviews.',
+    bio: 'Swift/iOS. Small gigs and looking at other people’s diffs.',
     joinedDaysAgo: 60,
   },
   {
@@ -153,7 +153,7 @@ const PEOPLE: SeedUser[] = [
     email: 'timur.asanov@example.com',
     telegram: 'timur_photo',
     city: 'Karaganda',
-    bio: 'Photographer — weddings, family, products. Sony A7IV + studio.',
+    bio: 'Photographer: weddings, family, products. Sony A7IV + studio.',
     joinedDaysAgo: 55,
   },
   {
@@ -233,7 +233,7 @@ const PEOPLE: SeedUser[] = [
     email: 'alikhan.sariev@example.com',
     telegram: 'alikhan_guitar',
     city: 'Almaty',
-    bio: 'Гитара — уроки для начинающих и средних. Классика, акустика.',
+    bio: 'Гитара: уроки для начинающих и средних. Классика, акустика.',
     joinedDaysAgo: 38,
   },
   {
@@ -243,7 +243,7 @@ const PEOPLE: SeedUser[] = [
     email: 'diana.petrova@example.com',
     telegram: 'diana_yoga',
     city: 'Astana',
-    bio: 'Yoga instructor (RYT-200). Group and 1:1 sessions, in-studio or home.',
+    bio: 'Yoga, RYT-200. Private or studio; can come to you if the lift works.',
     joinedDaysAgo: 35,
   },
   {
@@ -263,7 +263,7 @@ const PEOPLE: SeedUser[] = [
     email: 'anna.ivanova@example.com',
     telegram: 'anna_pets',
     city: 'Almaty',
-    bio: 'Pet sitter & dog walker. У меня сертификат по первой помощи животным.',
+    bio: 'Walk dogs, sit pets. Took a first-aid course for animals last year.',
     joinedDaysAgo: 30,
   },
   {
@@ -293,7 +293,7 @@ const PEOPLE: SeedUser[] = [
     email: 'marat.korkmaz@example.com',
     telegram: 'marat_law',
     city: 'Astana',
-    bio: 'Юрист — договоры, трудовые споры, регистрация ТОО. Первая консультация — бесплатно.',
+    bio: 'Юрист: договоры, трудовые споры, регистрация ТОО. Первая консультация бесплатно.',
     joinedDaysAgo: 25,
   },
   {
@@ -333,7 +333,7 @@ const PEOPLE: SeedUser[] = [
     email: 'arman.kozha@example.com',
     telegram: 'arman_fit',
     city: 'Almaty',
-    bio: 'Personal trainer. Strength, mobility, fat loss. In-gym or outdoor.',
+    bio: 'PT: strength, boring cardio, stretching. Gym or outside.',
     joinedDaysAgo: 18,
   },
   {
@@ -373,7 +373,7 @@ const PEOPLE: SeedUser[] = [
     email: 'ilyas.tursyn@example.com',
     telegram: 'ilyas_t',
     city: 'Astana',
-    bio: 'Студент НУ. Ищу подработку и репетиторов. Готов помочь с курьерскими задачами.',
+    bio: 'NU student. Odd jobs + errands around Astana when class allows.',
     joinedDaysAgo: 10,
   },
 ];
@@ -398,7 +398,7 @@ const LISTINGS: SeedListingTemplate[] = [
     kind: 'offer',
     title: 'Репетитор по математике 5–11 класс',
     description:
-      'Помогу подтянуть алгебру, геометрию, подготовиться к ЕНТ. Занятия онлайн или в Алматы. Первый урок диагностический — бесплатно.',
+      'Алгебра, геометрия, ЕНТ: разберём что провисает. Онлайн или в Алмате. Первый раз смотрим бесплатно, без обязаловки.',
     category: 'Tutoring',
     tags: 'math, ent, algebra, geometry, online',
     city: 'Almaty',
@@ -410,9 +410,9 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 1,
     kind: 'offer',
-    title: 'Подготовка к ЕНТ — математика, интенсив',
+    title: 'Подготовка к ЕНТ: математика, интенсив',
     description:
-      'Программа на 3 месяца до экзамена. Разбор всех типов заданий, домашние работы с проверкой.',
+      'Три месяца до экзамена: типовые задачи + домашка. Проверяю, иначе смысла нет.',
     category: 'Tutoring',
     tags: 'ent, math, intensive',
     city: 'Almaty',
@@ -435,9 +435,9 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 2,
     kind: 'offer',
-    title: 'Сантехник — устраню течь, заменю смеситель',
+    title: 'Сантехник: устраню течь, заменю смеситель',
     description:
-      'Опыт 12 лет. Работаю по Астане. Гарантия на работу 6 месяцев. Запчасти могу привезти сам.',
+      '12 лет по трубам, Астана. На свои косяки даю полгода. Запчасти могу сам привезти.',
     category: 'Repair',
     tags: 'plumber, leak, faucet, astana',
     city: 'Astana',
@@ -460,7 +460,7 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 2,
     kind: 'offer',
-    title: 'Мелкий бытовой ремонт — час работы',
+    title: 'Мелкий бытовой ремонт, час работы',
     description: 'Замена кранов, прокладок, труб, унитазов, монтаж полок и карнизов.',
     category: 'Handyman',
     tags: 'handyman, hourly',
@@ -473,7 +473,7 @@ const LISTINGS: SeedListingTemplate[] = [
     authorNum: 3,
     kind: 'offer',
     title: 'Лендинг под ключ для малого бизнеса',
-    description: 'Дизайн + вёрстка на Tilda/Webflow. Адаптивный, до 6 экранов, форма и аналитика.',
+    description: 'Tilda или Webflow, до 6 блоков, форма, Метрика/га при желании. Не «вау-арт», нормальный лендинг.',
     category: 'Design',
     tags: 'landing, web design, tilda, webflow',
     city: 'Almaty',
@@ -485,7 +485,7 @@ const LISTINGS: SeedListingTemplate[] = [
     authorNum: 3,
     kind: 'offer',
     title: 'UI/UX редизайн мобильного приложения',
-    description: 'До 20 экранов, прототип в Figma, пользовательские потоки и UI-кит. 2–3 недели.',
+    description: 'До 20 экранов, Figma, флоу + UI-кит. Обычно две-три недели, если не летим в крайности.',
     category: 'Design',
     tags: 'ui, ux, figma, mobile',
     priceMode: 'negotiable',
@@ -532,9 +532,9 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 5,
     kind: 'offer',
-    title: 'IELTS preparation — academic & general',
+    title: 'IELTS preparation: academic & general',
     description:
-      'Sample essays, mock speaking tests, weekly progress check-ins. CEFR B1→C1 in ~6 months.',
+      'Эссе на разбор, speaking по таймеру, раз в неделю сгоняем где вы просели. На C1 за полгода, если делать домашку.',
     category: 'Tutoring',
     tags: 'ielts, english, exam, online',
     city: 'Almaty',
@@ -546,9 +546,9 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 5,
     kind: 'offer',
-    title: 'Conversational English — small group (3–4 people)',
+    title: 'Conversational English, small group (3–4 people)',
     description:
-      'Weekly 90-min sessions over Zoom. Real-life topics, no boring drills. Free intro lesson.',
+      'Zoom, полтора часа, раз в неделю. Темы не из учебника. Пробное занятие бесплатно.',
     category: 'Tutoring',
     tags: 'english, speaking, group, zoom',
     priceMode: 'fixed',
@@ -559,7 +559,7 @@ const LISTINGS: SeedListingTemplate[] = [
     authorNum: 5,
     kind: 'request',
     title: 'Looking for a Spanish conversation partner',
-    description: 'A2/B1 level, want to practice 1–2 hrs a week. Happy to swap for English help.',
+    description: 'Somewhere A2/B1. 1–2 hrs/week. Can trade for English if you want.',
     category: 'Tutoring',
     tags: 'spanish, language exchange',
     priceMode: 'free',
@@ -570,7 +570,7 @@ const LISTINGS: SeedListingTemplate[] = [
     kind: 'offer',
     title: 'Code review & mentorship for junior iOS devs',
     description:
-      'Up to 1.5 hrs / week. PR walk-throughs, architecture advice (MVVM, TCA), Swift questions.',
+      'До полутора часов в неделю. Смотрим PR, MVVM/TCA, что у вас горит по Swift.',
     category: 'Programming',
     tags: 'ios, swift, mentorship, code review',
     priceMode: 'hourly',
@@ -581,7 +581,7 @@ const LISTINGS: SeedListingTemplate[] = [
     authorNum: 6,
     kind: 'offer',
     title: 'Прототип iOS-приложения за 2 недели',
-    description: 'SwiftUI + Supabase/Firebase. Подходит для MVP, демо инвесторам.',
+    description: 'SwiftUI + Supabase или Firebase. Норм для MVP, чтобы показать «вот оно крутится».',
     category: 'Programming',
     tags: 'ios, swiftui, mvp, prototype',
     priceMode: 'fixed',
@@ -603,9 +603,9 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 7,
     kind: 'offer',
-    title: 'Russian as a foreign language — A0 to B2',
+    title: 'Russian as a foreign language: A0 to B2',
     description:
-      'For expats, students, professionals. Live online lessons, custom course book per learner.',
+      'Онлайн, подбираю материалы под человека, а не «курс для всех».',
     category: 'Tutoring',
     tags: 'russian, rfl, online, expats',
     priceMode: 'hourly',
@@ -616,8 +616,8 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 8,
     kind: 'offer',
-    title: 'Свадебная фотосъёмка — полный день',
-    description: 'До 10 часов работы, 200+ обработанных фото, репортажный + постановочный стили.',
+    title: 'Свадебная фотосъёмка, полный день',
+    description: 'До 10 ч съёмки, отдаю 200+ обработанных. Репортаж + пара постановочных, без пластиковых улыбок по умолчанию.',
     category: 'Photography',
     tags: 'wedding, photography, full day',
     city: 'Karaganda',
@@ -663,8 +663,8 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 9,
     kind: 'offer',
-    title: 'Поддерживающая уборка — раз в неделю',
-    description: 'До 3-х часов. По договорённости — оплата за месяц.',
+    title: 'Поддерживающая уборка, раз в неделю',
+    description: 'До 3-х часов. По договорённости: оплата за месяц.',
     category: 'Cleaning',
     tags: 'weekly, recurring',
     city: 'Almaty',
@@ -723,7 +723,7 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 11,
     kind: 'offer',
-    title: 'Няня на час — срочные выходы',
+    title: 'Няня на час, срочные выходы',
     description: 'Ребёнок от 2 лет. Минимум 3 часа, оплата по факту.',
     category: 'Childcare',
     tags: 'nanny, on-demand',
@@ -749,7 +749,7 @@ const LISTINGS: SeedListingTemplate[] = [
     authorNum: 12,
     kind: 'offer',
     title: 'Поддержка и доработки существующего сайта',
-    description: 'Час работы — небольшие фичи, баги, обновления контента.',
+    description: 'Час работы: небольшие фичи, баги, обновления контента.',
     category: 'Programming',
     tags: 'support, maintenance',
     priceMode: 'hourly',
@@ -780,7 +780,7 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 14,
     kind: 'offer',
-    title: 'Квартирный переезд — Газель + 2 грузчика',
+    title: 'Квартирный переезд: Газель + 2 грузчика',
     description: 'Алматы и пригород. Минимум 3 часа. Своя упаковка по запросу.',
     category: 'Moving',
     tags: 'moving, gazelle, loaders',
@@ -803,7 +803,7 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 15,
     kind: 'offer',
-    title: 'Қазақ тілі — балаларға және ересектерге',
+    title: 'Қазақ тілі: балаларға және ересектерге',
     description: 'Бастапқы деңгейден сөйлеу деңгейіне дейін. Онлайн сабақтар, аптасына 2 рет.',
     category: 'Tutoring',
     tags: 'kazakh, online, language',
@@ -827,8 +827,8 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 16,
     kind: 'offer',
-    title: 'Уроки гитары — с нуля до своего первого костра',
-    description: 'Акустика, классика, аккорды, бой, перебор. Первый урок — бесплатно.',
+    title: 'Уроки гитары: с нуля до своего первого костра',
+    description: 'Акустика, классика, аккорды, бой, перебор. Первый урок бесплатно.',
     category: 'Music',
     tags: 'guitar, acoustic, beginners',
     city: 'Almaty',
@@ -851,8 +851,8 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 17,
     kind: 'offer',
-    title: 'Yoga 1:1 sessions — Hatha & Vinyasa',
-    description: 'In your home or at the studio. 60 or 90 mins. RYT-200 certified.',
+    title: 'Yoga 1:1 sessions (Hatha & Vinyasa)',
+    description: 'Ко мне в зал или домой. Час или полтора. Сертификат RYT-200 есть.',
     category: 'Fitness',
     tags: 'yoga, 1on1, astana',
     city: 'Astana',
@@ -863,8 +863,8 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 17,
     kind: 'offer',
-    title: 'Morning group yoga — outdoor (summer)',
-    description: 'Tu/Th 7:30am, central park. Bring a mat. Donation-based.',
+    title: 'Morning group yoga, outdoor (summer)',
+    description: 'Вт/чт 7:30, парк в центре. Коврик с собой. Скидываетесь сколько не жалко.',
     category: 'Fitness',
     tags: 'yoga, group, outdoor',
     city: 'Astana',
@@ -875,7 +875,7 @@ const LISTINGS: SeedListingTemplate[] = [
     authorNum: 18,
     kind: 'offer',
     title: 'Диагностика и ТО автомобиля',
-    description: 'Сканер, замена масла и фильтров. Подсказка что нужно — что подождёт.',
+    description: 'Сканер, замена масла и фильтров. Подсказка что нужно и что подождёт.',
     category: 'Repair',
     tags: 'auto, mechanic, diagnostics',
     city: 'Karaganda',
@@ -886,7 +886,7 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 18,
     kind: 'offer',
-    title: 'Шиномонтаж — переобувка комплекта',
+    title: 'Шиномонтаж: переобувка комплекта',
     description: 'Балансировка, накачка азотом, мойка дисков по запросу.',
     category: 'Repair',
     tags: 'tires, seasonal',
@@ -911,7 +911,7 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 19,
     kind: 'offer',
-    title: 'Выгул собак — по будням',
+    title: 'Выгул собак по будням',
     description: 'Утро или вечер, 45 мин. Отчёт фото/видео в Telegram.',
     category: 'Pet care',
     tags: 'dog walking',
@@ -923,7 +923,7 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 19,
     kind: 'request',
-    title: 'Ищу ветеринара на дом — кошка, плановый осмотр',
+    title: 'Ищу ветеринара на дом: кошка, плановый осмотр',
     description: 'Нужны прививки и общая консультация. Можно вечером.',
     category: 'Pet care',
     tags: 'vet, cat, home visit',
@@ -935,7 +935,7 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 20,
     kind: 'offer',
-    title: 'Шеф на дом — ужин на 4–8 человек',
+    title: 'Шеф на дом: ужин на 4–8 человек',
     description: 'Меню из 4-х блюд, продукты привожу сам, всё готовлю на вашей кухне.',
     category: 'Cooking',
     tags: 'chef, dinner, private',
@@ -993,7 +993,7 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 22,
     kind: 'offer',
-    title: 'Юридическая консультация — 1 час',
+    title: 'Юридическая консультация, 1 час',
     description: 'Договоры, споры, трудовое право. Первая встреча бесплатно (30 мин).',
     category: 'Legal',
     tags: 'consultation, contracts',
@@ -1006,7 +1006,7 @@ const LISTINGS: SeedListingTemplate[] = [
     authorNum: 23,
     kind: 'offer',
     title: 'Бухгалтерское сопровождение ИП',
-    description: 'Ежемесячная отчётность, общение с налоговой, кадры. От 1500 операций — отдельно.',
+    description: 'Ежемесячная отчётность, общение с налоговой, кадры. От 1500 операций, отдельно.',
     category: 'Accounting',
     tags: 'accounting, ip, monthly',
     city: 'Almaty',
@@ -1064,7 +1064,7 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 25,
     kind: 'offer',
-    title: 'Окрашивание волос — выезд на дом',
+    title: 'Окрашивание волос, выезд на дом',
     description: 'Крем-краска L’Oréal/Schwarzkopf, тонирование, омбре. Цена зависит от длины.',
     category: 'Beauty',
     tags: 'color, hair',
@@ -1075,8 +1075,8 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 26,
     kind: 'offer',
-    title: 'Personal training — 8 sessions / month',
-    description: 'Strength + mobility plan, weekly check-ins, nutrition basics. Almaty gyms.',
+    title: 'Personal training: 8 sessions / month',
+    description: 'Сила + чуть гибкости, раз в неделю спрашиваю «как оно». Про еду, базово. Залы в Алмате.',
     category: 'Fitness',
     tags: 'pt, strength, mobility',
     city: 'Almaty',
@@ -1087,8 +1087,8 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 26,
     kind: 'offer',
-    title: 'Outdoor bootcamp — Saturdays at Kok-Tobe',
-    description: '60 mins, all levels. Bring water and a friend. First session free.',
+    title: 'Outdoor bootcamp, Saturdays at Kok-Tobe',
+    description: 'Час, кто угодно по уровню. Вода с собой, друга можно. Первый раз бесплатно.',
     category: 'Fitness',
     tags: 'bootcamp, outdoor, group',
     city: 'Almaty',
@@ -1100,7 +1100,7 @@ const LISTINGS: SeedListingTemplate[] = [
     authorNum: 27,
     kind: 'offer',
     title: 'Организация дня рождения «под ключ»',
-    description: 'Ведущий, декор, торт, фото/видео — на ваш бюджет.',
+    description: 'Ведущий, декор, торт, фото/видео на ваш бюджет.',
     category: 'Events',
     tags: 'birthday, planning',
     city: 'Astana',
@@ -1157,7 +1157,7 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 29,
     kind: 'offer',
-    title: 'Иллюстрация на заказ — портрет, аватарка',
+    title: 'Иллюстрация на заказ: портрет, аватарка',
     description: 'Цифровая иллюстрация, формат под печать или соцсети.',
     category: 'Design',
     tags: 'illustration, portrait',
@@ -1180,7 +1180,7 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 30,
     kind: 'offer',
-    title: 'Курьерские задачи по Астане — пешком/метро',
+    title: 'Курьерские задачи по Астане, пешком/метро',
     description: 'Передам документы, заберу заказ. Гибкое расписание у студента.',
     category: 'Driving',
     tags: 'courier, errands, astana',
@@ -1205,7 +1205,7 @@ const LISTINGS: SeedListingTemplate[] = [
     authorNum: 7,
     kind: 'request',
     title: 'Need a logo for a small Russian-tutoring brand',
-    description: 'Wordmark + simple icon. 2 rounds of revisions. Budget ~120k.',
+    description: 'Надпись + простая иконка, две правки входят. Около 120к, если не упрёмся в правки №17.',
     category: 'Design',
     tags: 'logo, branding',
     priceMode: 'fixed',
@@ -1216,8 +1216,8 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 17,
     kind: 'request',
-    title: 'Looking for a photographer — yoga retreat (1 day)',
-    description: 'Outdoor + indoor session shots, ~80 edited photos. June.',
+    title: 'Looking for a photographer: yoga retreat (1 day)',
+    description: 'Улица + зал в ретрите, ~80 фото в обработке. Июнь, даты скажу в личке.',
     category: 'Photography',
     tags: 'photo, retreat, yoga',
     priceMode: 'fixed',
@@ -1238,8 +1238,8 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 26,
     kind: 'request',
-    title: 'Need a nutritionist — meal plan for cutting',
-    description: '6-week plan, weekly check-ins. Halal options.',
+    title: 'Need a nutritionist: meal plan for cutting',
+    description: 'План на 6 недель, раз в неделю отпишемся как идёт. Халяль продукты могу заложить.',
     category: 'Fitness',
     tags: 'nutrition, plan, cutting',
     priceMode: 'fixed',
@@ -1260,7 +1260,7 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 28,
     kind: 'offer',
-    title: 'Перевозка холодильника / стиралки — 1 ездка',
+    title: 'Перевозка холодильника / стиралки, 1 ездка',
     description: 'С грузчиками. По Алматы и пригороду до 30 км.',
     category: 'Moving',
     tags: 'appliance, single trip',
@@ -1272,7 +1272,7 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 14,
     kind: 'offer',
-    title: 'Помощь на переезде — 2 грузчика, без машины',
+    title: 'Помощь на переезде: 2 грузчика, без машины',
     description: 'Час работы. Удобно если своя машина уже есть.',
     category: 'Moving',
     tags: 'loaders, hourly',
@@ -1309,7 +1309,7 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 11,
     kind: 'request',
-    title: 'Ищу детского психолога — консультация',
+    title: 'Ищу детского психолога, консультация',
     description: 'Дочке 5 лет, проблемы со сном. Готова на онлайн.',
     category: 'Tutoring',
     tags: 'psychology, kids',
@@ -1321,7 +1321,7 @@ const LISTINGS: SeedListingTemplate[] = [
     authorNum: 5,
     kind: 'request',
     title: 'Help me build a personal portfolio site',
-    description: 'Static one-pager, ~5 sections, English only. Tilda or Framer ok.',
+    description: 'Одна страница, штук пять блоков, весь текст на EN. Tilda или Framer, мне без разницы.',
     category: 'Programming',
     tags: 'portfolio, web',
     priceMode: 'fixed',
@@ -1367,7 +1367,7 @@ const LISTINGS: SeedListingTemplate[] = [
     authorNum: 16,
     kind: 'offer',
     title: 'Уроки укулеле для детей 7+',
-    description: 'Весело, без скучной теории. Первые 3 песни — за 4 урока.',
+    description: 'Весело, без скучной теории. Первые 3 песни за 4 урока.',
     category: 'Music',
     tags: 'ukulele, kids',
     city: 'Almaty',
@@ -1378,7 +1378,7 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 25,
     kind: 'request',
-    title: 'Ищу маникюр на дому — раз в 3 недели',
+    title: 'Ищу маникюр на дому, раз в 3 недели',
     description: 'Покрытие гель-лак, аккуратно. Левый берег Астаны.',
     category: 'Beauty',
     tags: 'manicure, home',
@@ -1390,7 +1390,7 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 24,
     kind: 'request',
-    title: 'Нужны курсы Excel — продвинутый уровень',
+    title: 'Нужны курсы Excel, продвинутый уровень',
     description: 'Сводные таблицы, Power Query, базовый VBA. 8 занятий.',
     category: 'Tutoring',
     tags: 'excel, advanced',
@@ -1401,8 +1401,8 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 6,
     kind: 'offer',
-    title: 'Tech interview prep — Swift & system design',
-    description: 'Mock interviews, code review, takeaway notes. 4-session pack.',
+    title: 'Tech interview prep: Swift & system design',
+    description: 'Собесы «как на реале», разбор кода, шпаргалка что добить. Пакет из 4 встреч.',
     category: 'Programming',
     tags: 'interview, swift, mentorship',
     priceMode: 'fixed',
@@ -1435,7 +1435,7 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 18,
     kind: 'request',
-    title: 'Нужен автоэлектрик — Toyota Corolla 2014',
+    title: 'Нужен автоэлектрик: Toyota Corolla 2014',
     description: 'Не открывается центральный замок, иногда. Караганда.',
     category: 'Repair',
     tags: 'auto, electrician, toyota',
@@ -1447,7 +1447,7 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 20,
     kind: 'offer',
-    title: 'Готовые домашние обеды на неделю — 5 дней',
+    title: 'Готовые домашние обеды на неделю, 5 дней',
     description: 'Полезно, без заморозки. Доставка по центру Алматы.',
     category: 'Cooking',
     tags: 'meal prep, weekly, almaty',
@@ -1459,7 +1459,7 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 23,
     kind: 'request',
-    title: 'Ищу аудитора для ТОО — small scope',
+    title: 'Ищу аудитора для ТОО, small scope',
     description: 'Внутренний аудит за прошлый год. 2–3 дня работы.',
     category: 'Accounting',
     tags: 'audit, llp',
@@ -1469,7 +1469,7 @@ const LISTINGS: SeedListingTemplate[] = [
   {
     authorNum: 10,
     kind: 'offer',
-    title: 'Поездка в Боровое / Бурабай — день туда-обратно',
+    title: 'Поездка в Боровое / Бурабай, день туда-обратно',
     description: 'Минивэн до 6 человек. Маршрут на ваш выбор.',
     category: 'Driving',
     tags: 'borovoye, trip, minivan',
@@ -1493,7 +1493,7 @@ const LISTINGS: SeedListingTemplate[] = [
     authorNum: 3,
     kind: 'offer',
     title: 'Гостевые посты и обложки для Instagram (10 шт.)',
-    description: 'Дизайн в едином стиле + 1 reels-обложка в подарок.',
+    description: 'Один стиль на десять постов + обложка под reels, в цене.',
     category: 'Design',
     tags: 'instagram, smm, posts',
     priceMode: 'fixed',
@@ -1537,7 +1537,7 @@ const ENGAGEMENTS: SeedEngagement[] = [
       {
         by: 'counterpart',
         rating: 5,
-        text: 'Айгерим — лучший репетитор за 4 года. Сдал ЕНТ по математике на 38/40!',
+        text: 'Год полтора возились с матешой. На ЕНТ вышло 38 из 40, я доволен.',
         daysAgo: 28,
       },
       {
@@ -1573,7 +1573,7 @@ const ENGAGEMENTS: SeedEngagement[] = [
       {
         by: 'counterpart',
         rating: 5,
-        text: 'Дана сделала прототип лучше, чем я представлял. Очень внимательна к деталям.',
+        text: 'Прототип даже лучше наброска был. По отступам и шрифтам заморочилась как надо.',
         daysAgo: 3,
       },
       {
@@ -1600,7 +1600,7 @@ const ENGAGEMENTS: SeedEngagement[] = [
       {
         by: 'owner',
         rating: 5,
-        text: 'Марат — внимательный клиент, всё чётко по делу.',
+        text: 'Марат, внимательный клиент, всё чётко по делу.',
         daysAgo: 46,
       },
     ],
@@ -1615,7 +1615,7 @@ const ENGAGEMENTS: SeedEngagement[] = [
       {
         by: 'counterpart',
         rating: 5,
-        text: 'Сдала IELTS на 7.5! Алия — терпеливый и системный преподаватель.',
+        text: 'IELTS 7.5. У Алии долго и много пишем, но по грамматике реально подтянула.',
         daysAgo: 11,
       },
     ],
@@ -1630,7 +1630,7 @@ const ENGAGEMENTS: SeedEngagement[] = [
       {
         by: 'counterpart',
         rating: 5,
-        text: 'Очень полезные code review. После 4-х сессий заметно вырос как разработчик.',
+        text: 'Разборы PR норм, не просто «молодец». После четырёх встреч с архитектурой полегче стало.',
         daysAgo: 6,
       },
     ],
@@ -1645,13 +1645,13 @@ const ENGAGEMENTS: SeedEngagement[] = [
       {
         by: 'counterpart',
         rating: 5,
-        text: 'Sanzhar shipped a working prototype in 12 days, ahead of schedule.',
+        text: 'Рабочий прототип за 12 дней, даже раньше чем ждали.',
         daysAgo: 4,
       },
       {
         by: 'owner',
         rating: 5,
-        text: 'Aizhan was a great client — clear requirements, fast feedback.',
+        text: 'Айжан с ТЗ не расплывалась, ответы в тот же день. Работать можно.',
         daysAgo: 4,
       },
     ],
@@ -1666,7 +1666,7 @@ const ENGAGEMENTS: SeedEngagement[] = [
       {
         by: 'counterpart',
         rating: 4,
-        text: 'Lessons were structured and useful. Wish there were more speaking practice.',
+        text: 'Grammar drills fine, wanted a bit more free talk. Still worth it.',
         daysAgo: 18,
       },
     ],
@@ -1681,13 +1681,13 @@ const ENGAGEMENTS: SeedEngagement[] = [
       {
         by: 'counterpart',
         rating: 5,
-        text: 'Тимур — лучший выбор для свадьбы. Снял всё, никого не пропустил, фото готовы за 2 недели.',
+        text: 'На свадьбе всё в кадр попало, тёток из танцев не забыли. Фото через две недели.',
         daysAgo: 27,
       },
       {
         by: 'owner',
         rating: 5,
-        text: 'Айжан — профессиональный организатор, день прошёл идеально.',
+        text: 'С организацией тихо, без «ой забыл». За день ни одной паники.',
         daysAgo: 27,
       },
     ],
@@ -1702,7 +1702,7 @@ const ENGAGEMENTS: SeedEngagement[] = [
       {
         by: 'counterpart',
         rating: 5,
-        text: 'Дети были в восторге. Очень душевная съёмка.',
+        text: 'Дети не ныли, фото без слез в глазах у бабушки, редкость.',
         daysAgo: 13,
       },
     ],
@@ -1798,7 +1798,7 @@ const ENGAGEMENTS: SeedEngagement[] = [
       {
         by: 'counterpart',
         rating: 5,
-        text: 'Получили 3 классных варианта. Выбрали и счастливы.',
+        text: 'Три варианта на выбор, не мучили нас десятью правками. Один понравился сразу.',
         daysAgo: 23,
       },
     ],
@@ -1828,7 +1828,7 @@ const ENGAGEMENTS: SeedEngagement[] = [
       {
         by: 'counterpart',
         rating: 5,
-        text: 'Through Zarina I finally started speaking Kazakh in shops. Highly recommend.',
+        text: 'С Зариной хоть в магазине казахским заговорила. Без понтов, по делу.',
         daysAgo: 5,
       },
     ],
@@ -1850,7 +1850,7 @@ const ENGAGEMENTS: SeedEngagement[] = [
       {
         by: 'counterpart',
         rating: 5,
-        text: 'Adjusted the practice for my back issues. Felt better after 3 sessions.',
+        text: 'Скинул что спина болит, поменяли упоры. После трёх раз легче стало подниматься.',
         daysAgo: 3,
       },
     ],
@@ -1865,7 +1865,7 @@ const ENGAGEMENTS: SeedEngagement[] = [
       {
         by: 'counterpart',
         rating: 5,
-        text: 'Честный диагноз, сделал только то что нужно. Цена — как договаривались.',
+        text: 'Честный диагноз, сделал только то что нужно. Цена как договаривались.',
         daysAgo: 23,
       },
     ],
@@ -1910,7 +1910,7 @@ const ENGAGEMENTS: SeedEngagement[] = [
       {
         by: 'counterpart',
         rating: 5,
-        text: 'Гости спрашивали где такой шеф. Спасибо Олжасу за идеальный вечер!',
+        text: 'Гости до сих пор вспоминают стол. Олжас с продуктами сам заморочился.',
         daysAgo: 21,
       },
     ],
@@ -1940,13 +1940,13 @@ const ENGAGEMENTS: SeedEngagement[] = [
       {
         by: 'counterpart',
         rating: 5,
-        text: 'Открыли ТОО за 4 дня, без головной боли. Рекомендую как юриста.',
+        text: 'ТОО зарегали за 4 дня, без беготни по кабинетам. По юристу норм.',
         daysAgo: 13,
       },
       {
         by: 'owner',
         rating: 5,
-        text: 'Айман — отличный бухгалтер, кстати, рекомендую её клиентам :)',
+        text: 'Айман бухгалтером норм, если кому надо, скажу контакт.',
         daysAgo: 12,
       },
     ],
@@ -2005,7 +2005,7 @@ const ENGAGEMENTS: SeedEngagement[] = [
       {
         by: 'counterpart',
         rating: 5,
-        text: 'Праздник прошёл волшебно, дочка до сих пор вспоминает!',
+        text: 'Дочке понравилось, клоуна до сих пор называет по имени.',
         daysAgo: 6,
       },
     ],
@@ -2065,7 +2065,7 @@ const ENGAGEMENTS: SeedEngagement[] = [
       {
         by: 'counterpart',
         rating: 5,
-        text: 'Yerzhan helped translate my IELTS certificate the same day. Lifesaver.',
+        text: 'Ержан справку для IELTS перевёл в тот же день, очень выручил.',
         daysAgo: 16,
       },
     ],
@@ -2080,7 +2080,7 @@ const ENGAGEMENTS: SeedEngagement[] = [
       {
         by: 'counterpart',
         rating: 5,
-        text: 'Чисто, аккуратно, кофе предложили. Однозначно рекомендую.',
+        text: 'Чисто, без сюрпризов по времени, чай нормальный. Была ещё раз.',
         daysAgo: 10,
       },
     ],

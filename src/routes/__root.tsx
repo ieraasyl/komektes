@@ -89,11 +89,11 @@ export const Route = createRootRouteWithContext<{
     meta: [
       { charSet: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { title: 'komektes — peer-to-peer help marketplace' },
+      { title: 'komektes | neighbour-to-neighbour help' },
       {
         name: 'description',
         content:
-          'komektes is a marketplace for offering and requesting help. Post what you can do, find what you need, connect via Telegram.',
+          'Post what you can do or what you need. Listings live here; you hash out details on Telegram.',
       },
       { name: 'theme-color', content: '#3aa6c2' },
     ],

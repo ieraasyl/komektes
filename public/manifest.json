@@ -1,7 +1,7 @@
 {
   "short_name": "komektes",
-  "name": "komektes — neighbourly help marketplace",
-  "description": "Find someone who can help — or offer your own skills. A peer-to-peer marketplace where neighbours offer and request help.",
+  "name": "komektes | neighbourly help marketplace",
+  "description": "Find help or offer your own skills in a peer-to-peer marketplace built for neighbours.",
   "icons": [
     {
       "src": "favicon.svg",

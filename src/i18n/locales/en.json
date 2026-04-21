@@ -11,7 +11,7 @@
   },
   "brand": {
     "name": "komektes",
-    "tagline": "Help your neighbours. Get help back."
+    "tagline": "Help people nearby. Get a hand when you need it."
   },
   "nav": {
     "browse": "Browse",
@@ -21,8 +21,8 @@
     "newListing": "New listing"
   },
   "landing": {
-    "heroTitle": "A neighbourly help marketplace.",
-    "heroSubtitle": "Find someone who can help — or offer your own skills. Free, hourly, fixed price, or just a favour.",
+    "heroTitle": "Neighbour-to-neighbour help, in one place.",
+    "heroSubtitle": "Offer a skill or ask for one. Free, hourly, fixed, or sort it out between you.",
     "ctaBrowse": "Browse listings",
     "ctaPost": "Post a listing",
     "liveLabel": "Live near you",
@@ -30,14 +30,14 @@
     "emptyTitle": "Nothing here yet",
     "emptyDesc": "Be the first to post an offer or a request.",
     "offersTitle": "I can help",
-    "offersDesc": "Tutoring, repairs, errands, design, code — share what you can do.",
+    "offersDesc": "Tutoring, repairs, errands, design, code. Share what you can do.",
     "requestsTitle": "I need help",
     "requestsDesc": "Ask your community for help. Pay what's fair, or pay nothing.",
     "howTitle": "How it works",
     "howStep1Title": "Sign in",
     "howStep1Desc": "Email code or Google. Set a Telegram handle so people can reach you.",
     "howStep2Title": "Post or browse",
-    "howStep2Desc": "Create offers and requests with category, tags, and pricing.",
+    "howStep2Desc": "Add a category, tags, and how you want to price it (or not).",
     "howStep3Title": "Connect & review",
     "howStep3Desc": "Chat on Telegram. Mark the deal complete and leave a rating."
   },
@@ -53,7 +53,7 @@
   },
   "errorPage": {
     "title": "Something went wrong",
-    "message": "Something went wrong while loading this page. You can try again or return home.",
+    "message": "This page did not load. Try again, or go home with the button below.",
     "retry": "Try again",
     "goHome": "Go home"
   },
@@ -89,7 +89,7 @@
     "title": "Set up your profile",
     "desc": "A short profile so other people know who they're talking to.",
     "completeProfile": "Set up your profile",
-    "completeProfileDesc": "A short profile so other people know who they're talking to.",
+    "completeProfileDesc": "Shows on your public profile and next to anything you post.",
     "bioHelp": "Optional. Shown on your public profile.",
     "somethingWentWrong": "Something went wrong",
     "displayName": "Display name",
@@ -116,8 +116,8 @@
     "myRequests": "My requests",
     "yourOffers": "Your offers",
     "yourRequests": "Your requests",
-    "noOffers": "No offers yet — post something you can help with.",
-    "noRequests": "No requests yet — ask the community for help.",
+    "noOffers": "No offers yet. Post what you can help with.",
+    "noRequests": "No requests yet. Ask the community for a hand.",
     "newListing": "New listing",
     "newOffer": "New offer",
     "newRequest": "New request",
@@ -130,7 +130,7 @@
   },
   "browse": {
     "title": "Browse listings",
-    "subtitle": "Help offered and requested by people near you.",
+    "subtitle": "Offers and requests from people around you.",
     "search": "Search",
     "searchPlaceholder": "keyword…",
     "category": "Category",
@@ -170,7 +170,7 @@
     "descriptionPlaceholder": "Describe what's included, your experience, scheduling, etc.",
     "category": "Category",
     "categoryPlaceholder": "tutoring, repairs, design…",
-    "categoryHelp": "Free-text. Keep it short and consistent.",
+    "categoryHelp": "Type anything short. Match words people might search for.",
     "city": "City",
     "cityPlaceholder": "Astana",
     "tags": "Tags",
@@ -197,7 +197,7 @@
     "author": "Author",
     "unknownAuthor": "Unknown author",
     "contact": "Contact",
-    "contactNote": "Reach out on Telegram to discuss details.",
+    "contactNote": "Use Telegram to agree on time, price, and the rest.",
     "signInToContact": "Sign in to see contact info and connect.",
     "signIn": "Sign in",
     "thisIsYours": "This is your listing.",
@@ -205,14 +205,14 @@
     "connecting": "Connecting…"
   },
   "engagement": {
-    "activeTitle": "Active engagement",
-    "activeDesc": "Mark this complete after the help was provided. You'll then be able to leave a rating.",
+    "activeTitle": "In progress",
+    "activeDesc": "When you're done, mark it complete. Then you can leave a rating.",
     "markComplete": "Mark complete",
     "leaveReview": "Leave a review",
     "rating": "Rating",
     "reviewText": "Comment (optional)",
     "submitReview": "Submit review",
-    "alreadyReviewed": "You've already reviewed this engagement. Thanks!"
+    "alreadyReviewed": "You've already left a review for this one."
   },
   "profile": {
     "rating": "Rating",
