@@ -1,6 +1,6 @@
 import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { createServerFn } from '@tanstack/react-start';
-import { useState } from 'react';
+import { memo, useCallback, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { MagnifyingGlassIcon } from '@phosphor-icons/react';
 import { browseListings } from '@/lib/listings.server';
@@ -13,34 +13,33 @@ import { Field, FieldLabel } from '@/components/ui/field';
 import { cn } from '@/lib/utils';
 import ListingCard from '@/components/listings/ListingCard';
 const browseFn = createServerFn({ method: 'GET' })
-  .inputValidator((input: BrowseFilters) => input)
-  .handler(async ({ data }) => {
-    const parsed = browseFiltersSchema.safeParse(data);
-    if (!parsed.success) throw new Error(parsed.error.issues[0].message);
-    return browseListings(parsed.data);
-  });
+  .inputValidator((input: BrowseFilters) => browseFiltersSchema.parse(input))
+  .handler(async ({ data }) => browseListings(data));
 const browseSearchSchema = browseFiltersSchema;
 export const Route = createFileRoute('/browse')({
   validateSearch: browseSearchSchema,
   loaderDeps: ({ search }) => search,
-  loader: async ({ deps }) => {
-    return browseFn({ data: deps });
-  },
+  loader: async ({ deps }) => browseFn({ data: deps }),
+  staleTime: 30_000,
+  gcTime: 5 * 60_000,
   component: BrowsePage,
 });
-function PillButton({
+const PillButton = memo(function PillButton({
   active,
+  value,
   onClick,
   children,
 }: {
   active: boolean;
-  onClick: () => void;
+  value: string;
+  onClick: (value: string) => void;
   children: React.ReactNode;
 }) {
+  const handle = useCallback(() => onClick(value), [onClick, value]);
   return (
     <button
       type="button"
-      onClick={onClick}
+      onClick={handle}
       className={cn(
         'cursor-pointer rounded-full border px-3 py-1.5 text-xs font-medium transition-colors',
         active
@@ -51,7 +50,7 @@ function PillButton({
       {children}
     </button>
   );
-}
+});
 function BrowsePage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -59,18 +58,31 @@ function BrowsePage() {
   const listings = Route.useLoaderData();
   const [q, setQ] = useState(search.q ?? '');
   const [category, setCategory] = useState(search.category ?? '');
-  const apply = (next: Partial<BrowseFilters>) => {
-    navigate({
-      to: '/browse',
-      search: { ...search, ...next },
-    });
-  };
-  const onSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    apply({ q: q.trim() || undefined, category: category.trim() || undefined });
-  };
+  const apply = useCallback(
+    (next: Partial<BrowseFilters>) => {
+      navigate({ to: '/browse', search: { ...search, ...next, page: undefined } });
+    },
+    [navigate, search],
+  );
+  const onSearch = useCallback(
+    (e: React.FormEvent) => {
+      e.preventDefault();
+      apply({ q: q.trim() || undefined, category: category.trim() || undefined });
+    },
+    [apply, q, category],
+  );
+  const onKindClick = useCallback(
+    (value: string) => apply({ kind: value as BrowseFilters['kind'] }),
+    [apply],
+  );
+  const onPriceModeClick = useCallback(
+    (value: string) => apply({ priceMode: value as BrowseFilters['priceMode'] }),
+    [apply],
+  );
   const kind = search.kind ?? 'all';
   const priceMode = search.priceMode ?? 'any';
+  const kindOptions = useMemo(() => ['all', ...LISTING_KINDS] as const, []);
+  const priceOptions = useMemo(() => ['any', ...PRICE_MODES] as const, []);
   return (
     <div className="min-h-screen bg-background">
       <AppHeader />
@@ -118,12 +130,14 @@ function BrowsePage() {
             <div>
               <p className="mb-2 text-xs font-medium text-muted-foreground">{t('browse.kind')}</p>
               <div className="flex flex-wrap gap-2">
-                <PillButton active={kind === 'all'} onClick={() => apply({ kind: 'all' })}>
-                  {t('browse.kinds.all')}
-                </PillButton>
-                {LISTING_KINDS.map((k) => (
-                  <PillButton key={k} active={kind === k} onClick={() => apply({ kind: k })}>
-                    {t(`listingForm.kinds.${k}`)}
+                {kindOptions.map((k) => (
+                  <PillButton
+                    key={k}
+                    value={k}
+                    active={kind === k}
+                    onClick={onKindClick}
+                  >
+                    {k === 'all' ? t('browse.kinds.all') : t(`listingForm.kinds.${k}`)}
                   </PillButton>
                 ))}
               </div>
@@ -134,19 +148,14 @@ function BrowsePage() {
                 {t('browse.priceMode')}
               </p>
               <div className="flex flex-wrap gap-2">
-                <PillButton
-                  active={priceMode === 'any'}
-                  onClick={() => apply({ priceMode: 'any' })}
-                >
-                  {t('browse.priceModes.any')}
-                </PillButton>
-                {PRICE_MODES.map((m) => (
+                {priceOptions.map((m) => (
                   <PillButton
                     key={m}
+                    value={m}
                     active={priceMode === m}
-                    onClick={() => apply({ priceMode: m })}
+                    onClick={onPriceModeClick}
                   >
-                    {t(`listingForm.priceModes.${m}`)}
+                    {m === 'any' ? t('browse.priceModes.any') : t(`listingForm.priceModes.${m}`)}
                   </PillButton>
                 ))}
               </div>

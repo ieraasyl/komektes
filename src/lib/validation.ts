@@ -164,6 +164,7 @@ export const browseFiltersSchema = z.object({
   kind: z.enum(BROWSE_KINDS).optional(),
   category: z.string().trim().max(60).optional(),
   priceMode: z.enum(BROWSE_PRICE_MODES).optional(),
+  page: z.coerce.number().int().min(1).max(1000).optional(),
 });
 export type BrowseFilters = z.infer<typeof browseFiltersSchema>;
 export function tagsToArray(tags: string | null | undefined): string[] {

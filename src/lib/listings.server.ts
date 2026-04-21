@@ -131,7 +131,24 @@ export async function listActiveByAuthor(authorId: string): Promise<Listing[]> {
     .where(and(eq(listing.authorId, authorId), eq(listing.status, 'active' as const)))
     .orderBy(desc(listing.createdAt));
 }
-export async function browseListings(filters: BrowseFilters): Promise<ListingWithAuthor[]> {
+export const BROWSE_PAGE_SIZE = 30;
+
+export type BrowseListingCard = Pick<
+  Listing,
+  | 'id'
+  | 'kind'
+  | 'title'
+  | 'description'
+  | 'category'
+  | 'tags'
+  | 'city'
+  | 'priceMode'
+  | 'priceSummary'
+> & {
+  author: { id: string; displayName: string } | null;
+};
+
+export async function browseListings(filters: BrowseFilters): Promise<BrowseListingCard[]> {
   const db = getAppDb();
   const conds = [eq(listing.status, 'active' as const)];
   if (filters.kind && filters.kind !== 'all') {
@@ -141,32 +158,43 @@ export async function browseListings(filters: BrowseFilters): Promise<ListingWit
     conds.push(eq(listing.priceMode, filters.priceMode));
   }
   if (filters.category) {
-    conds.push(like(sql`lower(${listing.category})`, `%${filters.category.toLowerCase()}%`));
+    conds.push(like(listing.category, `%${filters.category}%`));
   }
   if (filters.q) {
-    const q = `%${filters.q.toLowerCase()}%`;
-    conds.push(
-      or(
-        like(sql`lower(${listing.title})`, q),
-        like(sql`lower(${listing.description})`, q),
-        like(sql`lower(${listing.tags})`, q),
-      )!,
-    );
+    const q = `%${filters.q}%`;
+    conds.push(or(like(listing.title, q), like(listing.tags, q), like(listing.description, q))!);
   }
+  const page = Math.max(1, filters.page ?? 1);
   const rows = await db
     .select({
-      listing,
-      author: {
-        id: profile.id,
-        displayName: profile.displayName,
-        city: profile.city,
-        telegram: profile.telegram,
-      },
+      id: listing.id,
+      kind: listing.kind,
+      title: listing.title,
+      description: sql<string>`substr(${listing.description}, 1, 240)`.as('description'),
+      category: listing.category,
+      tags: listing.tags,
+      city: listing.city,
+      priceMode: listing.priceMode,
+      priceSummary: listing.priceSummary,
+      authorId: profile.id,
+      authorDisplayName: profile.displayName,
     })
     .from(listing)
     .leftJoin(profile, eq(profile.id, listing.authorId))
     .where(and(...conds))
     .orderBy(desc(listing.createdAt))
-    .limit(100);
-  return rows.map((r) => ({ ...r.listing, author: r.author }));
+    .limit(BROWSE_PAGE_SIZE)
+    .offset((page - 1) * BROWSE_PAGE_SIZE);
+  return rows.map((r) => ({
+    id: r.id,
+    kind: r.kind,
+    title: r.title,
+    description: r.description,
+    category: r.category,
+    tags: r.tags,
+    city: r.city,
+    priceMode: r.priceMode,
+    priceSummary: r.priceSummary,
+    author: r.authorId ? { id: r.authorId, displayName: r.authorDisplayName ?? '' } : null,
+  }));
 }

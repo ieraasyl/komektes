@@ -1,13 +1,15 @@
+import { memo, useMemo } from 'react';
 import { Link } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 import { MapPinIcon } from '@phosphor-icons/react';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { tagsToArray } from '@/lib/validation';
-import type { ListingWithAuthor } from '@/lib/listings.server';
-export default function ListingCard({ listing }: { listing: ListingWithAuthor }) {
+import type { ListingWithAuthor, BrowseListingCard } from '@/lib/listings.server';
+type CardListing = BrowseListingCard | ListingWithAuthor;
+function ListingCardInner({ listing }: { listing: CardListing }) {
   const { t } = useTranslation();
-  const tags = tagsToArray(listing.tags).slice(0, 4);
+  const tags = useMemo(() => tagsToArray(listing.tags).slice(0, 4), [listing.tags]);
   return (
     <Card className="transition-all hover:-translate-y-0.5 hover:shadow-md hover:ring-primary/30">
       <CardContent className="p-5">
@@ -68,3 +70,5 @@ export default function ListingCard({ listing }: { listing: ListingWithAuthor })
     </Card>
   );
 }
+const ListingCard = memo(ListingCardInner);
+export default ListingCard;

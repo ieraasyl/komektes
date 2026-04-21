@@ -55,6 +55,7 @@ export const listing = sqliteTable(
     index('idx_listing_kind_status').on(table.kind, table.status),
     index('idx_listing_category').on(table.category),
     index('idx_listing_created').on(table.createdAt),
+    index('idx_listing_status_created').on(table.status, table.createdAt),
   ],
 );
 export type Listing = typeof listing.$inferSelect;
